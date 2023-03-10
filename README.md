@@ -1,13 +1,19 @@
-Welcome! 
+# Willkommen! 
 
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). 
+Dies ist eine wiki-artige Dokumentation zu Website ([vcp-mitteldeutschland.de](https://www.vcp-mitteldeutschland.de)) und Öffentlichkeitsarbeit im VCP Mitteldeutschland (Stand Frühjahr 2023). Zielsetzung ist, 
+* bisherige Absprachen und Workflows festzuhalten 
+* neuen Mitarbeitenden auf Landesebene einen einfachen Einstieg in die Arbeit mit der Website zu ermöglichen. 
 
-This template provides a skeleton file structure that you can edit to create your book. 
+Falls die Kapazitäten ausreichen, sollen zudem
+* Tipps zur Öffentlichkeitsarbeit und
+* ein Veranstaltungsleitfaden 
 
-The contents inside the .Rmd files provide some pointers to help you get started, but feel free to also delete the content in each file and start fresh.
+implementiert werden. 
 
-Additional resources:
+# Credits 
+Das Projekt basiert auf **R Markdown** and **bookdown** (https://github.com/rstudio/bookdown). 
 
-The **bookdown** book: https://bookdown.org/yihui/bookdown/
+### Weitere Informationen:
 
-The **bookdown** package reference site: https://pkgs.rstudio.com/bookdown
+* Das Buch zu **bookdown**: https://bookdown.org/yihui/bookdown/
+* Die **bookdown**-Package-Website: https://pkgs.rstudio.com/bookdown
