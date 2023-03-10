@@ -1,0 +1,69 @@
+# Kalender
+> Wie erstelle ich einen Termin und ein Anmeldeformular in sketch.dates? 
+> 
+## Termin erstellen in sketch.dates
+
+Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (ggf. unter Komponenten) auf sketch.dates | Termine/Neuen Termin anlegen. Nun kannst du alle Informationen eintragen. Nur Felder mit Asterisk (\*) sind verbindlich.
+
+* Mitteilung senden: Das kannst du so lassen, wie es ist.
+* Kategorien: Wähle hier aus, zu welcher Kategorie dein Termin gehört.
+* Terminbezeichnung: Trage hier den Veranstaltungstitel ein. Orientiere dich ggf. an unseren anderen Veranstaltungstiteln.
+* Status: Falls du den Termin noch nicht veröffentlichen willst, kannst du ihn verstecken.
+* Startzeitpunkt: Wann beginnt die Veranstaltung? Format: YYYY-MM-DD HH:MM:SS
+* Endzeitpunkt: Wann endet die Veranstaltung? Format: YYYY-MM-DD HH:MM:SS
+* Anmeldung freigegeben ab: Ab wann ist eine Anmeldung möglich? Format: YYYY-MM-DD HH:MM:SS (Achtung: Wird nicht auf der Website angezeigt!)
+* Anmeldefrist: Bis wann ist eine Anmeldung möglich? Format: YYYY-MM-DD HH:MM:SS (Achtung: Wird nicht auf der Website angezeigt und ist nicht mit der Frist in RsForm!Pro verfknüpft!)
+* Ort: PLZ und Ortsname des Veranstaltungsortes, z.B. 12345 Neustadt
+* Adresse: Straße und Hausnummer des Veranstaltungsortes
+* Koordinaten LAT/LONG: werden automatisch berechnet.
+* Dozent: Referent\*in der Veranstaltung
+* Gebühren: Teilnahmebeitrag, in Euro. Ein Euro-Zeichen brauchst du nicht eingeben, das wird automatisch angefügt!
+* Einleitungstext: Dieser Text wird bei den nächsten drei Terminen (Modul: Veranstaltungen und Aktivitäten) und auch auf der Terminseite angezeigt. Er sollte nicht mehr als ca. 25 Wörter umfassen.
+* Bild zum Termin: Hier kannst du ein Bild zum Termin hochladen. Bitte achte auf Dateigröße, -format und Auflösung sowie den korrekten Speicherort (für Bilder zu Terminen unter Bilder/Kalender/)!
+* Termin hervorheben: Für LVs, Bundes- und Landeslager sowie das Friedenslicht wird hier Ja ausgewählt, andernfalls Nein.
+* Ein Registrier-Formular soll nicht ausgegeben werden.
+* Teilnehmer: Hier kannst du die maximale Anzahl an Teilnehmenden angeben, falls es eine solche gibt. Ansonsten lässt du den Wert bei 0.
+* Warteliste verwenden? Ja / Nein. Der Standard ist JA. Falls Nein gewählt wird, so sind keine Anmeldungen mehr möglich, sobald die maximale Anzahl an Anmeldungen erreicht wurde.
+* Optionaler Zusatz: Nein
+* Optionen für Zusatz: Da sollte nichts drin stehen.
+* Onlinebezahlung: Nein
+* Beschreibung des Termins: Hier kannst du die Terminbeschreibung einfügen. Ebenfalls hier werden Anmeldeformular und Fördermittelgeberkasten eingebunden. Alle notwendigen Hinweise dazu folgen nun:
+  * Bitte nutze nicht das Überschriften Format Heading 1 (erst ab Heading 2)
+  * Bitte benutze die Logos unserer Fördermittelgeber, wenn deine Veranstaltung von ihnen gefördert wird. Die Auswahl unserer gängigen Fördermittelgeber sind hier schon eingefügt, wenn du darüber hinaus noch Fördermittelgeber hast, wende dich bitte an [oeffentlichkeitsarbeit@vcp-mitteldeutschland.de](mailto:oeffentlichkeitsarbeit@vcp-mitteldeutschland.de), wir machen das für dich.  
+    Standardmäßig sollte also folgender Code auftauchen:  
+    `{loadposition foerdermittelgeber-kasten}`
+  * Folgenden Text aufzunehmen, ist sinnvoll:
+   * **Hinweis:** Nur VCP-Mitglieder sind über den VCP e.V. Unfall- und Haftpflichtversichert. Versicherungsschutz bei Krankheit, für Reisegepäck und gegen Diebstahl besteht seitens des VCP nicht. Über die Versicherungssumme hinausgehende Forderungen können nicht geltend gemacht werden.
+  * Füge die Foto- und Filmvereinbarung, die du für deine Veranstaltung erstellen musst, ein. Hier kommst du zur bearbeitbaren Word-Vorlage [Link einfügen].  
+    Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)
+  * Füge ggf. eine Papieranmeldung hinzu.  
+    Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)
+  * Das Anmeldeformular, das du über RSForms erstellen kannst, bindest du über folgenden Code ein:  
+    {rsform Formular-ID}  
+    Bsp.: {rsform 6}
+  * Ansonsten kannst du deiner Kreativität freien Lauf lassen :)
+
+## Termin bearbeiten
+
+Unter der Terminübersicht von sketch.dates kannst du alle Termine bearbeiten. Du suchst einen alten Termin? Dann gehe auf Filter-Optionen und stelle die Anzeige auf "Vergangene" um.
+
+## Veranstaltungsanmeldung erstellen
+
+Veranstaltungsanmeldungen werden mit RSForm!Pro erstellt. Es gibt zwei Vorlagen:
+
+* einfach: Fragt nur die wichtigsten Informationen ab. Die Deadline-Option und Altersberechnung ist hier noch nicht implementiert
+* umfassend: Fragt alle Informationen ab, die das VL-Herz begehrt. Das Alter bei Veranstaltungsbeginn wird automatisch berechnet. Eine Anmeldefrist kann festgelegt werden.
+
+### Vorgehensweise
+
+1. Du kopierst die Vorlage, die du nutzen willst.
+2. Unter "Formular Eigenschaften" änderst du Titel und Formularnamen. Der Formularname ist nach dem folgenden Schema aufgebaut: `anmeldung-YYYY-veranstaltungsname`
+3. Gibt es eine Deadline für die Veranstaltungsanmeldung? Dann kannst du im versteckten Feld `deadline` die Deadline einstellen. Falls es keine Deadline geben soll, gibst du hier einfach das Veranstaltungsdatum ein. Schema: DD/MM/YYYY HH:MM:SS
+4. Nun kannst du die Formularfelder durchgehen. Alle Felder, die Informationen abfragen, die du nicht für die Veranstaltung benötigst, solltest du aus Gründen der Datensparsamkeit löschen.
+5. Sobald du das Anmeldeformular veröffentlichst, können sich Teilnehmende anmelden. Die Anmeldungen findest du in der zu deinem Formular zugehörigen Datenbank.
+
+## Abmeldeformular
+
+> Rechtlich sind wir verpflichtet, auch ein Abmeldeformular auf unserer Website anzubieten.
+
+Das Abmeldeformular musst du über `{loadposition form-abmeldung-designed}`  nach dem Anmeldeformular einbinden
