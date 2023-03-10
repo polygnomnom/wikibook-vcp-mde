@@ -1,0 +1,5 @@
+# Grundlegende Einstellungen
+## User-Struktur
+
+## Admin-Stuff
+...
