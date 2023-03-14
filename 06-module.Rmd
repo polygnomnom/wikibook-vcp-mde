@@ -1,0 +1,91 @@
+# Module
+
+## Was sind Module? 
+
+Ein Modul ist ein Element, welches prinzipiell auf jeder Seite eingebunden werden kann. Module können verschiedene Aufgaben und Zwecke erfüllen - für unsere Website sind das vor allem:
+* Slideshows
+* Bunte Boxen
+* Einbinden von Videos
+
+Module können über Erweiterungen>Site Module erstellt, bearbeitet und verwaltet werden.
+
+> Module sollten i.A. nur im HMTL-Modus und mit aktueller Sicherungskopie bearbeitet werden!
+
+## Wie lade ich ein Modul? 
+
+Module werden mit der Syntax `{loadposition modulname}` geladen, wobei `modulname` durch den Variablennamen des Moduls ersetzt wird. Diesen kannst du unter Erweiterungen > Site Module in der Spalte "Position" einsehen.
+
+## Tab-Module
+Die Tab-Module werden nur auf der Startseite eingebunden. Es gibt sieben verschiedene Tabs:
+* Info-Tab: Mitmachen
+* Info-Tabs: Aktuelles, Highlights, Demnächst
+* Kontakt-Tabs: Kontakt(daten), Nachricht, Newsletter
+
+Regelmäßig geändert werden bloß die Info-Tabs Aktuelles, Hightlights, Demnächst. Alle anderen Tabs werden bloß geupdatet, wenn sich Informationen (z.B. die Adresse des Landesbüros) ändern.
+
+### Info-Tabs 
+
+Ein Info-Tab besteht aus einer Headline (h3), einem Hintergrundbild und einem Link, der das Hintergrundbild umfasst.
+
+Die Hintergrundbilder für die Info-Tabs haben das Format 960 x 408 Pixel (Breite x Höhe). Auf den Hintergrundbildern soll *kein* Text eingebunden werden. Falls Text unerlässlich ist, wird er über HTML eingefügt.
+
+Der Link kann geändert werden, indem im <a>-Element der Parameter `href` geändert wird. Achte bei internen Links bitte darauf, auf den Präfix `[...]vcp-mitteldeutschland.de` zu verzichten und gib stattdessen den relativen Pfad an.
+
+Jeder der drei zusammenhängenden Info-Tabs Aktuelles, Highlights und Module hat einen bestimmten Informationstyp.
+
+| Info-Tab | Zweck | Beispiele |
+|----------|-------|-----------|
+| Aktuelles | Neuigkeiten aus dem Land | neue\*r BiRef gesucht, Pfaditag, Rückblick Bundeslager |
+| Highlights | Besondere Informationen | Solidatiräts- oder Spendenaktion, besonders öffentlichkeitswirksame Informationen |
+| Demnächst | die nächste große Veranstaltung | Bundeslager, Landeslager, aber auch z.B. Technikkurse |
+
+Text kann über die Bilder gelegt werden, indem der folgende Code innerhalb der `<a>` -Umgebung eingefügt wird:
+
+```
+<div style="position:absolute; font-size:2em; padding: 16px 20px; bottom: 24px;left: 20%; background-color:#fff; border-radius: 20px; boxshadow: 0 3px 6px #00000029">
+      Text 1 (Überschriftenartig)
+      <p>Spezifierung</p>
+</div>
+```
+
+> i.A. sollte das einbinden von weiterem Text vermieden werden (macht die Site unübersichtlicher)
+> Der Hintergrund kann auch transparent gewählt werden. Bei farbigem Hintergrund bitte den border-radius bei 20px lassen.
+
+### Kontakt-Tabs 
+...
+
+## Ein (Youtube-)Video einbinden
+
+> Videos binden wir bis auf weiteres ein, indem wir sie auf unserem YouTube-Account veröffentlichen und dann über Code auf unserer Website zeigen. Das spart einiges an Arbeit und Speicherplatz auf unsererm Server.
+
+### Warum muss ich hier aufpassen?
+
+Bei der klassischen Einbindung von Youtube-Videos wird automatisch ein Cookie von Youtube gesetzt, sobald die Website lädt. Dieser Cookie ist nicht notwendig für das Funktionieren der Website und greift unnötig Userdaten ab. Und nebenbei ist sie aufgrund der Datenschutzgrundverordnung der EU (DSGVO) **illegal**.
+
+Deshalb haben wir uns für eine 2-Klick-Lösung entschieden: Dabei muss der User muss aktiv sein Einverständnis zum Laden des Videos geben. Hier erfährst du, wie du das einfach umsetzen kannst.
+
+## Video in bunter Box
+
+1. **Navigiere** im Backend in den Reiter Erweiterungen/Site Module
+2. **Kopiere** das Modul "Video Pfaditag" (Modulname/Position: video_box_2click_pfaditag). Passe Titel und den Modulnamen (= die "Position" des Moduls) an.
+3. Dann kannst du im Editor die h3-Überschrift und den sich anschließenden Text nach deinen Wünschen anpassen.
+4. Wechsel nun in die Code-Ansicht. Hier ersetzt du die Zeichenfolge im String data-source (zweite Zeile, im div-Element mit der Klasse video_trigger) mit der Zeichenfolge am Ende des Youtube-Links. Z.B. ersetzt du `data-source="5ABE3cc0kq4"` mit `data-source="4TLEdX0jtr8"`
+5. Das Modul kannst du nun auf der Zielseite über die Syntax `{loadposition modulname}` einbinden, also z.B. `{loadposition video_box_2click_pfaditag}`.
+
+## Reiner HTML-Code und Video ohne bunte Box
+
+Solltest du aus irgendeinem Grund das Video ohne die bunte Box einbinden wollen, kannst du den folgenden Code direkt an der gewünschten Stelle im restlichen HTML-Code der Site einfügen:
+
+```
+<div class="video_wrapper">
+		<div class="video_trigger" style="background-image: url('images/Bilder/Stock/akkordeon.jpg'); width=560px ;height: 315px;" data-source="4TLEdX0jtr8">
+			<p class="text-center" style="color: #fff;">Mit dem Aufruf des Videos erklärst Du Dich einverstanden, dass Deine Daten an YouTube übermittelt werden und dass Du die <a href="index.php?option=com_content&amp;view=article&amp;id=18&amp;Itemid=222">Datenschutzerklärung</a> gelesen hast.</p>
+			<input type="button" value="Akzeptieren" class="btn btn-small btn-white btn-transparent" />
+		</div>
+		<div class="video_layer">
+			<iframe src="" width="100%" height="315px" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+		</div>
+	</div>
+```
+
+Quelle: <https://www.codepalm.de/post/youtube-2-klick-loesung/> (zuletzt abgerufen am 09.10.2022, 21:25 Uhr)
