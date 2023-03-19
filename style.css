@@ -1,5 +1,4 @@
 p.caption {
-  color: #004287;
   margin-top: 10px;
 }
 p code {
@@ -11,4 +10,8 @@ pre {
 }
 pre code {
   white-space: inherit;
+}
+
+h1, h2, h3 { 
+  color: #004287;
 }

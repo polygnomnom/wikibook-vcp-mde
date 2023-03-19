@@ -1,5 +1,5 @@
 --- 
-title: "Website & Öffentlichkeitsarbeit"
+title: "Leitfaden Website & Öffentlichkeitsarbeit"
 author: "Arbeitskreis Öffentlichkeitsarbeit VCP Mitteldeutschland"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -8,7 +8,7 @@ bibliography: [book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  Eine Dokumentation des bestehenden Wissens zur Öffentlichkeitsarbeit für Mitarbeitende auf Landesebende des VCP Mitteldeutschland.
+  Dokumentation des bestehenden Wissens zur Öffentlichkeitsarbeit für Mitarbeitende auf Landesebende des VCP Mitteldeutschland.
 link-citations: yes
 github-repo: polygnomnom/wikibook-vcp-mde
 ---
