@@ -8,3 +8,18 @@ bookdown::gitbook:
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Veröffentlicht mit bookdown</a></li>
     edit: https://github.com/polygnomnom/wikibook-vcp-mde/edit/BRANCH/%s
     download: ["pdf", "epub"]
+    fontsettings:
+      theme: white
+      family: sans
+      size: 2
+    sharing:
+      facebook: true
+      github: false
+      twitter: true
+      linkedin: false
+      weibo: false
+      instapaper: false
+      vk: false
+      whatsapp: false
+    info: false
+    

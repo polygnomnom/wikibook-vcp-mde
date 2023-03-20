@@ -3,3 +3,7 @@ output_dir: "docs"
 language: 
   ui:
     chapter_name: "Kapitel "
+
+bookdown::gitbook:
+  config:
+    
