@@ -1,5 +1,16 @@
 # Grundlegende Einstellungen
-## User-Struktur
 
-## Admin-Stuff
-...
+## Joomla
+### User-Struktur
+
+### Admin-Stuff
+
+## Matomo
+
+Matomo ist das Webanalysetool für unsere Website. Hierüber werden Statistiken zu Besuchszahlen, -orten, -zeiten, ... erfasst und teilweise bereits ausgewertet. Zudem ist ein Download der vollständigen Datensätze möglich. Im Vergleich zu z.B. Google Analytics ist Matomo datenschutzrechtlich deutlich besser designt.
+
+### User-Struktur 
+
+Der Username hat die Form `vorname.nachname`. 
+Bei Registrierung wird eine E-Mail-Adresse benötigt - dafür wird immer die mitteldeutsche E-Mail-Adresse verwendet (`vorname.nachname@vcp-mitteldeutschland.de`).
+Das Passwort muss nach dem ersten Log-in geändert werden. Die Passwort-Sicherheit wird durch Matomo vorgegeben. Falls gewünscht, kann auch eine Zwei-Faktor-Authentifizierung eingerichtet werden (nur zu empfehlen!).

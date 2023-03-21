@@ -1,1 +1,29 @@
 # Newsletter & Mailings (Acy Mailing)
+
+Um allen Mitgliedern Zugang zu den wichtigsten Informationen zu geben, haben wir Newsletter eingerichtet.
+Derzeit gibt es zwei Newsletter: 
+* den __Infoknoten__, ein allgemeiner Newsletter für Mitglieder und Interessierte
+* den R\*R-Newsletter (der genau das tut, was der Name andeutet)
+
+## Infoknoten
+
+Der Infokniten ist ein dreiwöchig erscheinender Newsletter mit den wichtigsten Informationen aus unserem VCP-Land.
+Alle Mitglieder und außenstehende Personen können Texte zur Veröffentlichung einreichen. Ob diese im Infoknoten veröffentlicht werden, entscheidet die Redaktion.
+
+### Struktur
+
+Der Infoknoten hat den folgenden Aufbau: 
+1. Header (inkl. Logo und Datum)
+2. Begrüßung (Einleitung mit kurzer Begrüßung. Wichtigste Inhalte werden angedeutet)
+3. Inhaltsverzeichnis (muss leider händisch erstellt werden)
+4. Anstehende Termine (die nächsten vier Termine, vorzugsweise in unserem VCP-Land inkl. Verknüpfungen zu unserem Kalender)
+5. Neues aus dem Land (die letzten zwei Blogbeiträge und aktuelle Meldungen)
+6. Wo du dich einbringen kannt (Stellenausschreibungen für freie Ämter / Aufgaben)
+7. Footer (Social Media Buttons, "Nicht mehr abonnieren"-Button, Verweise zu Impressum und Datenschutz)
+
+## R\*R-Newsletter
+
+Aktuell gibt es kein Konzept für diesen Newsletter
+
+## AcyMailing
+Zur Erstellung, Verwaltung und Analyse unserer Newsletter nutzen wir AcyMailing.
