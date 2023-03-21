@@ -1,6 +1,6 @@
 # Kalender
 > Wie erstelle ich einen Termin und ein Anmeldeformular in sketch.dates? 
-> 
+
 ## Termin erstellen in sketch.dates
 
 Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (ggf. unter Komponenten) auf sketch.dates | Termine/Neuen Termin anlegen. Nun kannst du alle Informationen eintragen. Nur Felder mit Asterisk (\*) sind verbindlich.
