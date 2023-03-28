@@ -15,3 +15,20 @@ pre code {
 h1, h2, h3 { 
   color: #004287;
 }
+
+/* Box für Warnungen */
+.warnung {
+  color: black; 
+  background-color: rgba(193,201,193,0.3);
+  border-left: 4px solid #e94653; 
+  border-radius: 4px;
+  padding: 4px 4px 4px 20px; 
+}
+
+blockquote {
+  opacity: 1; 
+  background-color: rgba(193,201,193,0.3);
+  border-left: 4px solid #004287;
+  border-radius: 4px;
+  padding: 4px 4px 4px 20px; 
+}

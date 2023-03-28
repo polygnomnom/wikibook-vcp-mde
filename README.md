@@ -9,6 +9,14 @@ Falls die Kapazitäten ausreichen, sollen zudem
 * ein Veranstaltungsleitfaden 
 
 implementiert werden. 
+## Box mit Warnung 
+Mit der Syntax 
+```
+::: {.warnung}
+Hier kommt der Text.
+:::
+```
+kann eine Box mit rotem linken Rand ausgegeben werden. Sie ist für Warnungen gedacht.
 
 # Credits 
 Das Projekt basiert auf **R Markdown** and **bookdown** (https://github.com/rstudio/bookdown). 
