@@ -28,20 +28,22 @@ Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (gg
 * Optionen für Zusatz: Da sollte nichts drin stehen.
 * Onlinebezahlung: Nein
 * Beschreibung des Termins: Hier kannst du die Terminbeschreibung einfügen. Ebenfalls hier werden Anmeldeformular und Fördermittelgeberkasten eingebunden. Alle notwendigen Hinweise dazu folgen nun:
-  * Bitte nutze nicht das Überschriften Format Heading 1 (erst ab Heading 2)
+  * Für Überschriften kannst du `Heading 2` oder niedriger nutzen. Verwende nie `Heading 1`.
   * Bitte benutze die Logos unserer Fördermittelgeber, wenn deine Veranstaltung von ihnen gefördert wird. Die Auswahl unserer gängigen Fördermittelgeber sind hier schon eingefügt, wenn du darüber hinaus noch Fördermittelgeber hast, wende dich bitte an [oeffentlichkeitsarbeit@vcp-mitteldeutschland.de](mailto:oeffentlichkeitsarbeit@vcp-mitteldeutschland.de), wir machen das für dich.  
     Standardmäßig sollte also folgender Code auftauchen:  
     `{loadposition foerdermittelgeber-kasten}`
   * Folgenden Text aufzunehmen, ist sinnvoll:
-   * **Hinweis:** Nur VCP-Mitglieder sind über den VCP e.V. Unfall- und Haftpflichtversichert. Versicherungsschutz bei Krankheit, für Reisegepäck und gegen Diebstahl besteht seitens des VCP nicht. Über die Versicherungssumme hinausgehende Forderungen können nicht geltend gemacht werden.
+    > **Hinweis:** Nur VCP-Mitglieder sind über den VCP e.V. Unfall- und Haftpflichtversichert. Versicherungsschutz bei Krankheit, für Reisegepäck und gegen Diebstahl besteht seitens des VCP nicht. Über die Versicherungssumme hinausgehende Forderungen können nicht geltend gemacht werden.
   * Füge die Foto- und Filmvereinbarung, die du für deine Veranstaltung erstellen musst, ein. Hier kommst du zur bearbeitbaren Word-Vorlage [Link einfügen].  
-    Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)
+    Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website). Denke auch daran, sie in dem Anmeldeformular zu verlinken! 
   * Füge ggf. eine Papieranmeldung hinzu.  
     Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)
   * Das Anmeldeformular, das du über RSForms erstellen kannst, bindest du über folgenden Code ein:  
-    {rsform Formular-ID}  
-    Bsp.: {rsform 6}
+    `{rsform Formular-ID}`  
+    Bsp.: `{rsform 11}`
   * Ansonsten kannst du deiner Kreativität freien Lauf lassen :)
+
+Eine Anleitung dazu, wie du ein Anmeldeformular einbinden kannst, findest du im Kapitel [Formulare und RSForm!Pro]
 
 ## Termin bearbeiten
 
@@ -64,6 +66,10 @@ Veranstaltungsanmeldungen werden mit RSForm!Pro erstellt. Es gibt zwei Vorlagen:
 
 ## Abmeldeformular
 
-> Rechtlich sind wir verpflichtet, auch ein Abmeldeformular auf unserer Website anzubieten.
+::: {.warnung}
+Rechtlich sind wir verpflichtet, auch ein Abmeldeformular auf unserer Website anzubieten.
+:::
 
-Das Abmeldeformular musst du über `{loadposition form-abmeldung-designed}`  nach dem Anmeldeformular einbinden
+Das Abmeldeformular musst du über `{loadposition form-abmeldung-designed}`  nach dem Anmeldeformular einbinden. 
+
+> Im Fall der Fälle gibt es auch ein Abmeldeformular unter [vcp-mitteldeutschland.de/kontakt](https://vcp-mitteldeutschland.de/kontakt). Besser ist es jedoch, wenn du das Abmeldeformular auch unterhalb der Anmeldung einbindest!

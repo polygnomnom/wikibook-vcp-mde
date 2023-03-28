@@ -23,7 +23,7 @@
 <meta name="author" content="Arbeitskreis Öffentlichkeitsarbeit VCP Mitteldeutschland" />
 
 
-<meta name="date" content="2023-03-21" />
+<meta name="date" content="2023-03-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -210,22 +210,23 @@
 <li>Onlinebezahlung: Nein</li>
 <li>Beschreibung des Termins: Hier kannst du die Terminbeschreibung einfügen. Ebenfalls hier werden Anmeldeformular und Fördermittelgeberkasten eingebunden. Alle notwendigen Hinweise dazu folgen nun:
 <ul>
-<li>Bitte nutze nicht das Überschriften Format Heading 1 (erst ab Heading 2)</li>
+<li>Für Überschriften kannst du <code>Heading 2</code> oder niedriger nutzen. Verwende nie <code>Heading 1</code>.</li>
 <li>Bitte benutze die Logos unserer Fördermittelgeber, wenn deine Veranstaltung von ihnen gefördert wird. Die Auswahl unserer gängigen Fördermittelgeber sind hier schon eingefügt, wenn du darüber hinaus noch Fördermittelgeber hast, wende dich bitte an <a href="mailto:oeffentlichkeitsarbeit@vcp-mitteldeutschland.de">oeffentlichkeitsarbeit@vcp-mitteldeutschland.de</a>, wir machen das für dich.<br />
 Standardmäßig sollte also folgender Code auftauchen:<br />
 <code>{loadposition foerdermittelgeber-kasten}</code></li>
-<li>Folgenden Text aufzunehmen, ist sinnvoll:</li>
-<li><strong>Hinweis:</strong> Nur VCP-Mitglieder sind über den VCP e.V. Unfall- und Haftpflichtversichert. Versicherungsschutz bei Krankheit, für Reisegepäck und gegen Diebstahl besteht seitens des VCP nicht. Über die Versicherungssumme hinausgehende Forderungen können nicht geltend gemacht werden.</li>
+<li>Folgenden Text aufzunehmen, ist sinnvoll:
+&gt; <strong>Hinweis:</strong> Nur VCP-Mitglieder sind über den VCP e.V. Unfall- und Haftpflichtversichert. Versicherungsschutz bei Krankheit, für Reisegepäck und gegen Diebstahl besteht seitens des VCP nicht. Über die Versicherungssumme hinausgehende Forderungen können nicht geltend gemacht werden.</li>
 <li>Füge die Foto- und Filmvereinbarung, die du für deine Veranstaltung erstellen musst, ein. Hier kommst du zur bearbeitbaren Word-Vorlage [Link einfügen].<br />
-Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)</li>
+Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website). Denke auch daran, sie in dem Anmeldeformular zu verlinken!</li>
 <li>Füge ggf. eine Papieranmeldung hinzu.<br />
 Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)</li>
 <li>Das Anmeldeformular, das du über RSForms erstellen kannst, bindest du über folgenden Code ein:<br />
-{rsform Formular-ID}<br />
-Bsp.: {rsform 6}</li>
+<code>{rsform Formular-ID}</code><br />
+Bsp.: <code>{rsform 11}</code></li>
 <li>Ansonsten kannst du deiner Kreativität freien Lauf lassen :)</li>
 </ul></li>
 </ul>
+<p>Eine Anleitung dazu, wie du ein Anmeldeformular einbinden kannst, findest du im Kapitel <a href="formulare-und-rsformpro.html#formulare-und-rsformpro">Formulare und RSForm!Pro</a></p>
 </div>
 <div id="termin-bearbeiten" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Termin bearbeiten<a href="kalender.html#termin-bearbeiten" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -251,10 +252,13 @@ Bsp.: {rsform 6}</li>
 </div>
 <div id="abmeldeformular" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Abmeldeformular<a href="kalender.html#abmeldeformular" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<blockquote>
+<div class="warnung">
 <p>Rechtlich sind wir verpflichtet, auch ein Abmeldeformular auf unserer Website anzubieten.</p>
+</div>
+<p>Das Abmeldeformular musst du über <code>{loadposition form-abmeldung-designed}</code> nach dem Anmeldeformular einbinden.</p>
+<blockquote>
+<p>Im Fall der Fälle gibt es auch ein Abmeldeformular unter <a href="https://vcp-mitteldeutschland.de/kontakt">vcp-mitteldeutschland.de/kontakt</a>. Besser ist es jedoch, wenn du das Abmeldeformular auch unterhalb der Anmeldung einbindest!</p>
 </blockquote>
-<p>Das Abmeldeformular musst du über <code>{loadposition form-abmeldung-designed}</code> nach dem Anmeldeformular einbinden</p>
 
 </div>
 </div>
