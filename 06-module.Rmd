@@ -3,6 +3,7 @@
 ## Was sind Module? 
 
 Ein Modul ist ein Element, welches prinzipiell auf jeder Seite eingebunden werden kann. Module können verschiedene Aufgaben und Zwecke erfüllen - für unsere Website sind das vor allem:
+
 * Slideshows
 * Bunte Boxen
 * Einbinden von Videos
@@ -13,10 +14,12 @@ Module können über Erweiterungen>Site Module erstellt, bearbeitet und verwalte
 
 ## Wie lade ich ein Modul? 
 
-Module werden mit der Syntax `{loadposition modulname}` geladen, wobei `modulname` durch den Variablennamen des Moduls ersetzt wird. Diesen kannst du unter Erweiterungen > Site Module in der Spalte "Position" einsehen.
+Module werden mit der Syntax `{loadposition modulname}` eingebunden, wobei `modulname` durch den Variablennamen des Moduls ersetzt wird. Diesen kannst du unter `Erweiterungen > Site Module` in der Spalte "Position" einsehen.
 
 ## Tab-Module
+
 Die Tab-Module werden nur auf der Startseite eingebunden. Es gibt sieben verschiedene Tabs:
+
 * Info-Tab: Mitmachen
 * Info-Tabs: Aktuelles, Highlights, Demnächst
 * Kontakt-Tabs: Kontakt(daten), Nachricht, Newsletter
