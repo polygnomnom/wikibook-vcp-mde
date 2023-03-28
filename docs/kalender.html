@@ -184,31 +184,133 @@
 </blockquote>
 <div id="termin-erstellen-in-sketch.dates" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Termin erstellen in sketch.dates<a href="kalender.html#termin-erstellen-in-sketch.dates" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (ggf. unter Komponenten) auf sketch.dates | Termine/Neuen Termin anlegen. Nun kannst du alle Informationen eintragen. Nur Felder mit Asterisk (*) sind verbindlich.
-| Feld | Musst du etwas ändern? | Nähere Beschreibung |
-| ——— | ———————– | ——————–|
-| Mitteilung senden | Nein | Das kannst du so lassen, wie es ist. |
-| Kategorien | Ja | Wähle hier aus, zu welcher Kategorie dein Termin gehört. |
-| Terminbezeichnung | Ja | Trage hier den Veranstaltungstitel ein. Orientiere dich ggf. an unseren anderen Veranstaltungstiteln.
-| Status | Vielleicht | Falls du den Termin noch nicht veröffentlichen willst, kannst du ihn verstecken.
-| Startzeitpunkt | Ja | Wann beginnt die Veranstaltung? Format: YYYY-MM-DD HH:MM:SS
-| Endzeitpunkt | Ja | Wann endet die Veranstaltung? Format: YYYY-MM-DD HH:MM:SS
-| Anmeldung freigegeben ab | Nein | Ab wann ist eine Anmeldung möglich? Format: YYYY-MM-DD HH:MM:SS (Achtung: Wird nicht auf der Website angezeigt! Derzeit ist unklar, ob diese Einstellung eine Ausiwkrung auf die Anmeldung via RSForms hat) |
-| Anmeldefrist | Ja | Bis wann ist eine Anmeldung möglich? Format: YYYY-MM-DD HH:MM:SS (Achtung: Wird nicht auf der Website angezeigt und ist nicht mit der Frist in RsForm!Pro verfknüpft!) |
-| Ort | Ja | PLZ und Ortsname des Veranstaltungsortes, z.B. 12345 Neustadt |
-| Adresse | Ja | Straße und Hausnummer des Veranstaltungsortes
-| Koordinaten LAT/LONG| Nein | werden automatisch berechnet. |
-| Dozent | Vielleicht | Referent*in der Veranstaltung
-| Gebühren | Ja | Teilnahmebeitrag, in Euro. Ein Euro-Zeichen brauchst du nicht eingeben, das wird automatisch angefügt!|
-| Einleitungstext | Ja | Dieser Text wird bei den nächsten drei Terminen (Modul: Veranstaltungen und Aktivitäten) und auch auf der Terminseite angezeigt. Er sollte nicht mehr als ca. 25 Wörter umfassen.|
-| Bild zum Termin | Vielleicht | Hier kannst du ein Bild zum Termin hochladen. Bitte achte auf Dateigröße, -format und Auflösung sowie den korrekten Speicherort (für Bilder zu Terminen unter Bilder/Kalender/)! |
-| Termin hervorheben | Nein | Für LVs, Bundes- und Landeslager sowie das Friedenslicht wird hier Ja ausgewählt, andernfalls Nein. |
-| Registrier-Formular | Nein | Ein Registrier-Formular soll nicht ausgegeben werden. |
-| Teilnehmer | Nein | Hier kannst du die maximale Anzahl an Teilnehmenden angeben, falls es eine solche gibt. Ansonsten lässt du den Wert bei 0, dann gibt es keine Beschränkung. |
-| Warteliste verwenden?| Nein | Der Standard ist JA. Falls Nein gewählt wird, so sind keine Anmeldungen mehr möglich, sobald die maximale Anzahl an Anmeldungen erreicht wurde.|
-| Optionaler Zusatz | Nein | Standard ist nein, da wir RSForms benutzen.|
-| Optionen für Zusatz | Nein | Da sollte nichts drin stehen.|
-| Onlinebezahlung | Nein | Theoretisch gäbe es die Möglichkeit zur Online-Zahlung. Dieses Modul nutzen wir jedoch nicht.|</p>
+<p>Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (ggf. unter Komponenten) auf sketch.dates | Termine/Neuen Termin anlegen. Nun kannst du alle Informationen eintragen. Nur Felder mit Asterisk (*) sind verbindlich.</p>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="44%" />
+<col width="38%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feld</th>
+<th>Musst du etwas ändern?</th>
+<th>Nähere Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mitteilung senden</td>
+<td>Nein</td>
+<td>Das kannst du so lassen, wie es ist.</td>
+</tr>
+<tr class="even">
+<td>Kategorien</td>
+<td>Ja</td>
+<td>Wähle hier aus, zu welcher Kategorie dein Termin gehört.</td>
+</tr>
+<tr class="odd">
+<td>Terminbezeichnung</td>
+<td>Ja</td>
+<td>Trage hier den Veranstaltungstitel ein. Orientiere dich ggf. an unseren anderen Veranstaltungstiteln.</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>Vielleicht</td>
+<td>Falls du den Termin noch nicht veröffentlichen willst, kannst du ihn verstecken.</td>
+</tr>
+<tr class="odd">
+<td>Startzeitpunkt</td>
+<td>Ja</td>
+<td>Wann beginnt die Veranstaltung? Format: YYYY-MM-DD HH:MM:SS</td>
+</tr>
+<tr class="even">
+<td>Endzeitpunkt</td>
+<td>Ja</td>
+<td>Wann endet die Veranstaltung? Format: YYYY-MM-DD HH:MM:SS</td>
+</tr>
+<tr class="odd">
+<td>Anmeldung freigegeben ab</td>
+<td>Nein</td>
+<td>Ab wann ist eine Anmeldung möglich? Format: YYYY-MM-DD HH:MM:SS (Achtung: Wird nicht auf der Website angezeigt! Derzeit ist unklar, ob diese Einstellung eine Ausiwkrung auf die Anmeldung via RSForms hat)</td>
+</tr>
+<tr class="even">
+<td>Anmeldefrist</td>
+<td>Ja</td>
+<td>Bis wann ist eine Anmeldung möglich? Format: YYYY-MM-DD HH:MM:SS (Achtung: Wird nicht auf der Website angezeigt und ist nicht mit der Frist in RsForm!Pro verfknüpft!)</td>
+</tr>
+<tr class="odd">
+<td>Ort</td>
+<td>Ja</td>
+<td>PLZ und Ortsname des Veranstaltungsortes, z.B. 12345 Neustadt</td>
+</tr>
+<tr class="even">
+<td>Adresse</td>
+<td>Ja</td>
+<td>Straße und Hausnummer des Veranstaltungsortes</td>
+</tr>
+<tr class="odd">
+<td>Koordinaten LAT/LONG</td>
+<td>Nein</td>
+<td>werden automatisch berechnet.</td>
+</tr>
+<tr class="even">
+<td>Dozent</td>
+<td>Vielleicht</td>
+<td>Referent*in der Veranstaltung</td>
+</tr>
+<tr class="odd">
+<td>Gebühren</td>
+<td>Ja</td>
+<td>Teilnahmebeitrag, in Euro. Ein Euro-Zeichen brauchst du nicht eingeben, das wird automatisch angefügt!</td>
+</tr>
+<tr class="even">
+<td>Einleitungstext</td>
+<td>Ja</td>
+<td>Dieser Text wird bei den nächsten drei Terminen (Modul: Veranstaltungen und Aktivitäten) und auch auf der Terminseite angezeigt. Er sollte nicht mehr als ca. 25 Wörter umfassen.</td>
+</tr>
+<tr class="odd">
+<td>Bild zum Termin</td>
+<td>Vielleicht</td>
+<td>Hier kannst du ein Bild zum Termin hochladen. Bitte achte auf Dateigröße, -format und Auflösung sowie den korrekten Speicherort (für Bilder zu Terminen unter Bilder/Kalender/)!</td>
+</tr>
+<tr class="even">
+<td>Termin hervorheben</td>
+<td>Nein</td>
+<td>Für LVs, Bundes- und Landeslager sowie das Friedenslicht wird hier Ja ausgewählt, andernfalls Nein.</td>
+</tr>
+<tr class="odd">
+<td>Registrier-Formular</td>
+<td>Nein</td>
+<td>Ein Registrier-Formular soll nicht ausgegeben werden.</td>
+</tr>
+<tr class="even">
+<td>Teilnehmer</td>
+<td>Nein</td>
+<td>Hier kannst du die maximale Anzahl an Teilnehmenden angeben, falls es eine solche gibt. Ansonsten lässt du den Wert bei 0, dann gibt es keine Beschränkung.</td>
+</tr>
+<tr class="odd">
+<td>Warteliste verwenden?</td>
+<td>Nein</td>
+<td>Der Standard ist JA. Falls Nein gewählt wird, so sind keine Anmeldungen mehr möglich, sobald die maximale Anzahl an Anmeldungen erreicht wurde.</td>
+</tr>
+<tr class="even">
+<td>Optionaler Zusatz</td>
+<td>Nein</td>
+<td>Standard ist nein, da wir RSForms benutzen.</td>
+</tr>
+<tr class="odd">
+<td>Optionen für Zusatz</td>
+<td>Nein</td>
+<td>Da sollte nichts drin stehen.</td>
+</tr>
+<tr class="even">
+<td>Onlinebezahlung</td>
+<td>Nein</td>
+<td>Theoretisch gäbe es die Möglichkeit zur Online-Zahlung. Dieses Modul nutzen wir jedoch nicht.</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li>Beschreibung des Termins: Hier kannst du die Terminbeschreibung einfügen. Ebenfalls hier werden Anmeldeformular und Fördermittelgeberkasten eingebunden. Alle notwendigen Hinweise dazu folgen nun:
 <ul>
