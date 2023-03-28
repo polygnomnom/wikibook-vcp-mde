@@ -16,6 +16,10 @@ h1, h2, h3 {
   color: #004287;
 }
 
+div.book.font-family-1 {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Box für Warnungen */
 .warnung {
   color: black; 

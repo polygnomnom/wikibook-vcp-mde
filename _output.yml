@@ -10,7 +10,7 @@ bookdown::gitbook:
     download: ["pdf", "epub"]
     fontsettings:
       theme: white
-      family: 'Roboto'
+      family: sans
       size: 2
     sharing:
       facebook: true
