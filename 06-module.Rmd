@@ -29,7 +29,7 @@ Ein Info-Tab besteht aus einer Headline (h3), einem Hintergrundbild und einem Li
 
 Die Hintergrundbilder für die Info-Tabs haben das Format 960 x 408 Pixel (Breite x Höhe). Auf den Hintergrundbildern soll *kein* Text eingebunden werden. Falls Text unerlässlich ist, wird er über HTML eingefügt.
 
-Der Link kann geändert werden, indem im <a>-Element der Parameter `href` geändert wird. Achte bei internen Links bitte darauf, auf den Präfix `[...]vcp-mitteldeutschland.de` zu verzichten und gib stattdessen den relativen Pfad an.
+Der Link kann geändert werden, indem im `<a>`-Element der Parameter `href` geändert wird. Achte bei internen Links bitte darauf, auf den Präfix `[...]vcp-mitteldeutschland.de` zu verzichten und gib stattdessen den relativen Pfad an.
 
 Jeder der drei zusammenhängenden Info-Tabs Aktuelles, Highlights und Module hat einen bestimmten Informationstyp.
 
@@ -48,8 +48,9 @@ Text kann über die Bilder gelegt werden, indem der folgende Code innerhalb der 
 </div>
 ```
 
-> i.A. sollte das einbinden von weiterem Text vermieden werden (macht die Site unübersichtlicher)
-> Der Hintergrund kann auch transparent gewählt werden. Bei farbigem Hintergrund bitte den border-radius bei 20px lassen.
+> i.A. sollte das Einbinden von weiterem Text vermieden werden (macht die Seite unübersichtlicher)
+> Der Hintergrund kann auch transparent gewählt werden. Dann muss jedoch auf ausreichend Kontrast geachtet werden, damit der Text noch lesbar ist.
+> Bei farbigem Hintergrund bitte den border-radius bei 20px lassen.
 
 ### Kontakt-Tabs 
 ...
