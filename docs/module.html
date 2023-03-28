@@ -181,10 +181,12 @@
 <h1><span class="header-section-number">Kapitel 7</span> Module<a href="module.html#module" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="was-sind-module" class="section level2 hasAnchor" number="7.1">
 <h2><span class="header-section-number">7.1</span> Was sind Module?<a href="module.html#was-sind-module" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Ein Modul ist ein Element, welches prinzipiell auf jeder Seite eingebunden werden kann. Module können verschiedene Aufgaben und Zwecke erfüllen - für unsere Website sind das vor allem:
-* Slideshows
-* Bunte Boxen
-* Einbinden von Videos</p>
+<p>Ein Modul ist ein Element, welches prinzipiell auf jeder Seite eingebunden werden kann. Module können verschiedene Aufgaben und Zwecke erfüllen - für unsere Website sind das vor allem:</p>
+<ul>
+<li>Slideshows</li>
+<li>Bunte Boxen</li>
+<li>Einbinden von Videos</li>
+</ul>
 <p>Module können über Erweiterungen&gt;Site Module erstellt, bearbeitet und verwaltet werden.</p>
 <blockquote>
 <p>Module sollten i.A. nur im HMTL-Modus und mit aktueller Sicherungskopie bearbeitet werden!</p>
@@ -192,20 +194,22 @@
 </div>
 <div id="wie-lade-ich-ein-modul" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> Wie lade ich ein Modul?<a href="module.html#wie-lade-ich-ein-modul" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Module werden mit der Syntax <code>{loadposition modulname}</code> geladen, wobei <code>modulname</code> durch den Variablennamen des Moduls ersetzt wird. Diesen kannst du unter Erweiterungen &gt; Site Module in der Spalte “Position” einsehen.</p>
+<p>Module werden mit der Syntax <code>{loadposition modulname}</code> eingebunden, wobei <code>modulname</code> durch den Variablennamen des Moduls ersetzt wird. Diesen kannst du unter <code>Erweiterungen &gt; Site Module</code> in der Spalte “Position” einsehen.</p>
 </div>
 <div id="tab-module" class="section level2 hasAnchor" number="7.3">
 <h2><span class="header-section-number">7.3</span> Tab-Module<a href="module.html#tab-module" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Die Tab-Module werden nur auf der Startseite eingebunden. Es gibt sieben verschiedene Tabs:
-* Info-Tab: Mitmachen
-* Info-Tabs: Aktuelles, Highlights, Demnächst
-* Kontakt-Tabs: Kontakt(daten), Nachricht, Newsletter</p>
+<p>Die Tab-Module werden nur auf der Startseite eingebunden. Es gibt sieben verschiedene Tabs:</p>
+<ul>
+<li>Info-Tab: Mitmachen</li>
+<li>Info-Tabs: Aktuelles, Highlights, Demnächst</li>
+<li>Kontakt-Tabs: Kontakt(daten), Nachricht, Newsletter</li>
+</ul>
 <p>Regelmäßig geändert werden bloß die Info-Tabs Aktuelles, Hightlights, Demnächst. Alle anderen Tabs werden bloß geupdatet, wenn sich Informationen (z.B. die Adresse des Landesbüros) ändern.</p>
 <div id="info-tabs" class="section level3 hasAnchor" number="7.3.1">
 <h3><span class="header-section-number">7.3.1</span> Info-Tabs<a href="module.html#info-tabs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Ein Info-Tab besteht aus einer Headline (h3), einem Hintergrundbild und einem Link, der das Hintergrundbild umfasst.</p>
 <p>Die Hintergrundbilder für die Info-Tabs haben das Format 960 x 408 Pixel (Breite x Höhe). Auf den Hintergrundbildern soll <em>kein</em> Text eingebunden werden. Falls Text unerlässlich ist, wird er über HTML eingefügt.</p>
-<p>Der Link kann geändert werden, indem im <a>-Element der Parameter <code>href</code> geändert wird. Achte bei internen Links bitte darauf, auf den Präfix <code>[...]vcp-mitteldeutschland.de</code> zu verzichten und gib stattdessen den relativen Pfad an.</p>
+<p>Der Link kann geändert werden, indem im <code>&lt;a&gt;</code>-Element der Parameter <code>href</code> geändert wird. Achte bei internen Links bitte darauf, auf den Präfix <code>[...]vcp-mitteldeutschland.de</code> zu verzichten und gib stattdessen den relativen Pfad an.</p>
 <p>Jeder der drei zusammenhängenden Info-Tabs Aktuelles, Highlights und Module hat einen bestimmten Informationstyp.</p>
 <table>
 <colgroup>
@@ -244,8 +248,9 @@
       &lt;p&gt;Spezifierung&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 <blockquote>
-<p>i.A. sollte das einbinden von weiterem Text vermieden werden (macht die Site unübersichtlicher)
-Der Hintergrund kann auch transparent gewählt werden. Bei farbigem Hintergrund bitte den border-radius bei 20px lassen.</p>
+<p>i.A. sollte das Einbinden von weiterem Text vermieden werden (macht die Seite unübersichtlicher)
+Der Hintergrund kann auch transparent gewählt werden. Dann muss jedoch auf ausreichend Kontrast geachtet werden, damit der Text noch lesbar ist.
+Bei farbigem Hintergrund bitte den border-radius bei 20px lassen.</p>
 </blockquote>
 </div>
 <div id="kontakt-tabs" class="section level3 hasAnchor" number="7.3.2">
@@ -323,12 +328,12 @@ gitbook.start({
 },
 "fontsettings": {
 "theme": "white",
-"family": "sans",
+"family": "Roboto",
 "size": 2
 },
 "edit": {
-"link": "https://github.com/polygnomnom/wikibook-vcp-mde/edit/BRANCH/06-module.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,

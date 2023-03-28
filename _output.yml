@@ -6,11 +6,11 @@ bookdown::gitbook:
         <li><a href="./">Leitfaden Website und Öffentlichkeitsarbeit</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Veröffentlicht mit bookdown</a></li>
-    edit: https://github.com/polygnomnom/wikibook-vcp-mde/edit/BRANCH/%s
+    # edit: https://github.com/polygnomnom/wikibook-vcp-mde/edit/git@github.com_polygnomnom/wikibook-vcp-mde.git/%s
     download: ["pdf", "epub"]
     fontsettings:
       theme: white
-      family: sans
+      family: 'Roboto'
       size: 2
     sharing:
       facebook: true
