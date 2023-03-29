@@ -10,6 +10,8 @@ Derzeit gibt es zwei Newsletter:
 
 ## Nutzungskonzept AcyMailing
 
+Zur Erstellung, Verwaltung und Analyse unserer Newsletter nutzen wir AcyMailing.
+
 ### Accounts
 
 Die Regelung von Accounts ist gewissermaßen überflüssig, da AcyMailing über Joomla mitverwaltet wird.
@@ -104,7 +106,3 @@ Der Infoknoten hat den folgenden Aufbau:
 ## R\*R-Newsletter
 
 Aktuell gibt es kein Konzept für diesen Newsletter.
-
-## AcyMailing
-
-Zur Erstellung, Verwaltung und Analyse unserer Newsletter nutzen wir AcyMailing.
