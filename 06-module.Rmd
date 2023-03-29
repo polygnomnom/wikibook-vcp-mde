@@ -58,6 +58,9 @@ Text kann über die Bilder gelegt werden, indem der folgende Code innerhalb der 
 ### Kontakt-Tabs 
 ...
 
+## Bunte Box 
+Bei dem Modul Bunte Box kann die Farbe des oberen Randstreifens im Tab /Erweitert angepasst werden. 
+
 ## Ein (Youtube-)Video einbinden
 
 > Videos binden wir bis auf weiteres ein, indem wir sie auf unserem YouTube-Account veröffentlichen und dann über Code auf unserer Website zeigen. Das spart einiges an Arbeit und Speicherplatz auf unsererm Server.

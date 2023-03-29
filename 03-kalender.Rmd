@@ -13,7 +13,7 @@ Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (gg
 | Status              | Vielleicht              | Falls du den Termin noch nicht veröffentlichen willst, kannst du ihn verstecken.
 | Startzeitpunkt      | Ja                      | Wann beginnt die Veranstaltung? Format: YYYY-MM-DD HH:MM:SS
 | Endzeitpunkt        | Ja                      | Wann endet die Veranstaltung? Format: YYYY-MM-DD HH:MM:SS
-| Anmeldung freigegeben ab | Nein         | Ab wann ist eine Anmeldung möglich? Format: YYYY-MM-DD HH:MM:SS (Achtung: Wird nicht auf der Website angezeigt! Derzeit ist unklar, ob diese Einstellung eine Ausiwkrung auf die Anmeldung via RSForms hat) | 
+| Anmeldung freigegeben ab | Nein               | Ab wann ist eine Anmeldung möglich? Format: YYYY-MM-DD HH:MM:SS (Achtung: Wird nicht auf der Website angezeigt! Derzeit ist unklar, ob diese Einstellung eine Ausiwkrung auf die Anmeldung via RSForms hat) | 
 | Anmeldefrist        | Ja                      | Bis wann ist eine Anmeldung möglich? Format: YYYY-MM-DD HH:MM:SS (Achtung: Wird nicht auf der Website angezeigt und ist nicht mit der Frist in RsForm!Pro verfknüpft!) | 
 | Ort                 | Ja                      | PLZ und Ortsname des Veranstaltungsortes, z.B. 12345 Neustadt | 
 | Adresse             | Ja                      | Straße und Hausnummer des Veranstaltungsortes
@@ -41,9 +41,7 @@ Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (gg
     Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website). Denke auch daran, sie in dem Anmeldeformular zu verlinken! 
   * Füge ggf. eine Papieranmeldung hinzu.  
     Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)
-  * Das Anmeldeformular, das du über RSForms erstellen kannst, bindest du über folgenden Code ein:  
-    `{rsform Formular-ID}`  
-    Bsp.: `{rsform 11}`
+  * Das Anmeldeformular, das du über RSForms erstellen kannst, bindest du über den Code `{rsform Formular-ID}` ein, z.B.: `{rsform 11}`
   * Ansonsten kannst du deiner Kreativität freien Lauf lassen :)
 
 Eine Anleitung dazu, wie du ein Anmeldeformular einbinden kannst, findest du im Kapitel [Formulare und RSForm!Pro]

@@ -36,7 +36,7 @@ Ein Anmeldeformular bindest du über den Code
 {rsform Formular-ID}
 ```
 
-also zum Beispiel: {rsform 6}
+ein, also zum Beispiel: {rsform 6}
 
 #### Abmeldeformular
 

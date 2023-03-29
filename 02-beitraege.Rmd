@@ -1,2 +1,149 @@
 # Beitragserstellung
-...
+
+## How-To: Joomla Editor 
+
+### Benutzeroberfläche 
+
+### Tabellen
+
+Tabellen können in verschiedenen Stilen erstellt werden. Die folgenden Varianten stehen zur Auswahl: 
+
+| CSS-Klasse | Beschreibung                             |
+| ---------- | ---------------------------------------- |
+| striped    | gestrichelte Linien, keine Umrandung     |
+| info       | übersichtliche, kompakte Darstellung der Inhalte; kleine Abstände und kleine Schriftgröße |
+| zebra      | jede zweite Zeile ist farbig hervorgehoben |
+| stacked    | die Spalten werden abwechselnd dunkler bzw. heller | 
+
+### Links
+
+In HTML werden Links mit dem `<a></a>`-Element eingebunden. Aktuell gibt es drei verschiedene Fälle, in denen Links genutz werden können: 
+
+* Interne Links: hier ist darauf zu achten, dass nicht die URL aus dem Browserfenster kopiert wird, sondern via `Content` / `Menu` der Link gesetzt wird. Dieser beginnt dann mit `?index.php...`
+* Externe Links: sollten immer so gesetzt werden, dass sie sich in einem neuen Tab / neuen Fenster öffnen ("open in new window").
+* Buttons: Links können auch als Button gestyled werden. Dafür wird die Klasse `btn` zugewiesen. Bsp.: `<a href='#' class='btn btn-yellow'> Hier klicken!</a>`
+
+## Einen Beitrag verfassen
+
+### Das Wording
+
+#### VCP-Wording: Gendern und interne Schreibweisen
+
+Die Vorlage zum VCP-Wording kann auf der Seite des VCP gefunden werden. 
+
+#### Formulierung
+
+#### Spezielle Schreibweisen
+Wenn Schrägstriche („/“) genutzt werden, dann: 
+
+* Im Fließtext ohne Leerzeichen davor und danach, Bsp.: Dähre/Werben
+* In Überschriften mit einem Leerzeichen davor und danach, Bsp.: Dähre / Werben
+* Wenn der Schrägstrich zu einer Wortgruppe in Beziehung steht, immer mit einem Leerzeichen davor und danach, Bsp.: auf der Fahrt / dem Lager
+
+Es gibt verschiedene Striche, die im Text verwendet werden können. 
+
+* Zur Silbentrennung und zum Kennzeichen zusammenhängender Wörter ist das ein einfaches Minuszeichen, Bsp.: Sachsen-Anhalt, VCP-Länder
+* Zur Kennzeichnung von Nebensätzen und Datumsspannen verwenden wir den sog. Halbgeviertstrich, Bsp.: 1973 – 1999
+* In Texten sollte jedoch lieber für Datumsspannen (etc.) die Form „… bis …“ verwendet werden, Bsp. 1973 bis 1999. 
+
+Datumsangaben können verschieden getätigt werden.
+
+* Im Fließtext wollen wir die Form DD. Monat JJJJ, also z.B.: 09. März 2021 nutzen
+* In Überschriften sollte die Form DD.MM.JJ verwendet werden, Bsp.: 09.03.2021
+* In Dateinamen schreiben wir, wenn das Datum denn angegeben wird, das Datum ganz zu Beginn in der Form JJJJ-MM-DD, Bsp.: 2021-03-09_Leitfaden.docx 
+
+Kontaktadressen: Die verschiedenen Medien/Kontaktmöglichkeiten werden wie folgt abgekürzt und geschrieben. Wir verzichten hier auf einen Doppelpunkt nach dem Abkürzungspunkt: 
+
+* Festnetztelefon: Tel. 0123 4567 678
+* Mobiltelefon: Mobil 0123 4567 678
+* Fax: Fax 0123 4567 678
+* E-Mail: bipi@vcp-mitteldeutschland.de
+
+Anführungszeichen: Wir verwenden die Form „…“, also z.B. VCP Stamm „Cracau CITZ“ 
+
+### Wie schreibt man einen Text? 
+
+Der folgende Text ist ein Vorschlag – jede\*r findet am Ende seine eigene Vorgehensweise, mit der sie\*er am zufriedensten ist.
+
+> Wenn ich mir einen Text zum Schreiben aussuche, entscheide ich zunächst nach Bauchgefühl, auf welchen Text ich Lust habe (welches Thema klingt cool? 
+> Wo habe ich evtl. schonmal andere Texte gesehen, die ich hier zur Inspiration nutzen kann? Zu welchem Thema kann ich eine Verbindung aufbauen?). 
+> Dann öffne ich den Editor und fange erst einmal an, zu schreiben (wenn möglich). 
+> Zuallererst sind das meist Überschriften und kürzere Textanfänge. 
+> Wichtig dabei ist, dass man an folgendes denkt: Der Text braucht eine Struktur! 
+> Spätestens sobald ich mir unsicher bin, was ich noch groß schreiben kann/soll, beginne ich mit meiner Internet-Recherche: 
+> Ich inspiriere mich bei den Texten anderer VCP- und BdP-Länder, Vereine, Organisationen, .... Was wird hier geschrieben? Was wird vermittelt? 
+> Was möchte ich aussagen? Wenn ich dann weiterschreibe, tue ich das mit dem Gedanken, dass der Text, den ich hier gerade verfasse, sowieso noch nicht final sein muss. 
+> Es ist also in Ordnung, wenn sich Passagen komisch anhören, ich für manche Stellen verschiedene Vorschläge verfasse, usw. 
+> Wenn ich dann mit meinem Text fertig bin, schaue ich meist (frühestens) einen Tag später nochmal drüber, oder lasse das gleich andere Menschen tun (das geht auch ziemlich gut gemeinsam). 
+> Das daraus entstehende Ergebnis ist dann eher eine Collage aus den vielen Ideen und Textschnipseln, die ich zu Beginn niedergeschrieben habe - aber eine Collage, die hoffentlich gut verfasst ist;)
+
+### Suchmaschinenoptimierung (SEO)
+
+Damit Beiträge auch bei Suchmaschinenergebnissen (z.B. über DuckDuckGo, Google, Ecosia, Bing, MetaGer, …) angezeigt werden, kann SEO betrieben werden. 
+Dafür ist ein griffiger, eindeutiger Titel wichtig, aber eben noch viel mehr: zum Beispiel, und das ist für unsere Zwecke wichtig, die Meta-Beschreibung. 
+Zu ihr schreibt Google folgendes: 
+
+> #### Meta-Beschreibungs-Tag verwenden
+>
+> Im Meta-Beschreibungs-Tag sind die auf der betreffenden Seite behandelten Themen für Google und andere Suchmaschinen zusammengefasst. Der Titel einer Seite kann mehrere Wörter oder einen Ausdruck umfassen. Das Meta-Beschreibungs-Tag einer Seite hingegen kann ein oder zwei Sätze oder sogar einen kurzen Absatz enthalten. Wie das <title>-Element wird auch das Meta-Beschreibungs-Tag im <head>-Element des HTML-Dokuments platziert.
+> 
+> #### Was sind die Vorzüge von Meta-Beschreibungs-Tags?
+> 
+> Meta-Beschreibungs-Tags spielen eine wichtige Rolle, weil Google sie möglicherweise als Snippets für deine Seiten in den Google-Suchergebnissen verwendet. Beachte, dass wir „möglicherweise“ sagen, weil Google eventuell auch einen relevanten Abschnitt des sichtbaren Textes deiner Seite verwendet, wenn er gut zur Suchanfrage eines Nutzers passt. Es empfiehlt sich immer, den einzelnen Seiten Meta-Beschreibungs-Tags hinzuzufügen – für den Fall, dass Google keine gute Textauswahl zur Verwendung im Snippet finden kann. Weitere Informationen zum Erstellen hochwertiger Meta-Beschreibungen 
+> 
+> #### Seiteninhalte korrekt zusammenfassen 
+> 
+> Verfasse eine Beschreibung, die für Nutzer informativ und interessant ist, wenn diese dein Meta-Beschreibungs-Tag als Snippet in einem Suchergebnis sehen. Für die Textlänge in einem description-Meta-Tag gibt es keine Mindestvorgabe oder Obergrenze. Wir empfehlen jedoch eine ausreichende Länge, bei der der Text vollständig in der Suche angezeigt wird und alle relevanten Informationen enthält, die Nutzer für die Einschätzung benötigen, ob die Seite nützlich und relevant für sie ist. Beachte aber, dass Nutzern je nach Suchform und -ort eventuell unterschiedlich große Snippets angezeigt werden.
+> Vermeide dabei:
+> 
+> * Meta-Beschreibungs-Tags mit Inhalten, die keinen Bezug zu den Inhalten auf der Seite haben.
+> * allgemeine Beschreibungen wie „Dies ist eine Webseite“ oder „Seite über Baseballkarten“
+> * Beschreibungen, die ausschließlich aus Keywords bestehen
+> * das Kopieren des gesamten Dokumentinhalts in das Meta-Beschreibungs-Tag
+> 
+> #### Für jede Seite eindeutige Beschreibungen verwenden
+> 
+> Wenn du für jede Seite ein anderes Meta-Beschreibungs-Tag festlegst, hilft dies sowohl Nutzern als auch Google – insbesondere bei Suchanfragen, bei denen Nutzer 
+> mehrere Seiten in deiner Domain aufrufen können, z. B. bei Suchen mit dem Operator site:. Doch falls deine Website Tausende oder sogar Millionen von Seiten hat, 
+> ist es wahrscheinlich nicht möglich, für alle Seiten manuell Meta-Beschreibungs-Tags zu erstellen. In diesem Fall kannst du Meta-Beschreibungs-Tags basierend auf 
+> dem Inhalt der einzelnen Seiten automatisch generieren.
+> Vermeide dabei die Verwendung desselben Meta-Beschreibungs-Tags für alle Seiten deiner Website oder für eine große Gruppe von Seiten
+
+Eine weitere, deutlich ausführlichere Einschätzung bietet beispielsweise der [Blog SEBO Content](https://sebo-content.de/meta-beschreibung/). 
+Zusammenfassend lässt sich sagen: Es ist wichtig, bei der Erstellung von Beiträgen folgendes zu beachten: 
+
+* Titel: 
+    * Ca. 15 bis 40 Zeichen lang
+    * Max. 60 Zeichen lang
+* Meta-Beschreibung: 
+    * Max. ~160 Zeichen lang
+    * Aussagekräftig und beschreibend
+    * Emojis und können durchaus verwendet werden, das kann sogar gut sein. 
+
+### Beispiel: Einen Blog-Beitrag schreiben
+
+In diesem Abschnitt soll ein Blogbeitrag am Beispiel des akaheli erstellt werden. Dafür werden wir deutlich mehr Module einbinden und erwähnen, als für einen klassischen 
+Blogbeitrag normalerweise notwendig sind. 
+
+#### Thema und Inhalt bestimmen
+
+Mögliche Fragen zu Beginn: Worum soll es gehen? Was ist der Anlass? Wer schreibt den Artikel? Wer ist die Zielgruppe? Folgt daraus eine bestimme Art und Weise, wie der 
+Beitrag formuliert sein sollte? Worin besteht der Nachrichtenwert? Gibt es bereits Ideen für den Titel?
+
+> Akaheli wurde auf dem letzten CIRCLES gegründet, es sollen Mitarbeiter\*innen gewonnen und erste Informationen an die Öffentlichkeit gegeben werden 
+> (Ziel: Informationsbasis für mögliche Sponsor*innen schaffen). Gründungsmitglieder sind: Icks, Üps, Zätt. 
+> 
+> Bestehende Titelideen: Der akaheli hebt ab! / Neu gegründer akaheli befasst sich mit spannendem Thema
+
+#### Den roten Faden finden
+
+Je nachdem, wie deine bisherigen Vorstellungen von dem Artikel sind, lohnt es sich, einmal kurz zu pausieren und zu schauen, welche Message du dem*der Leser*in mit auf den Weg geben willst. Davon ausgehend kannst du dann überlegen, ob und wie du einleitest, im Hauptteil verfährst und den Beitrag abschließt. Methoden-Tipp: Inhaltsverzeichnis erstellen! 
+Anfangen zu schreiben? 
+Wenn du all die Informationen hast, die du benötigst, dann ja! Ansonsten solltest du noch einmal etwas Recherche betreiben – nicht selten ergeben sich dann neue Sichtweisen, die zu einem anderen Artikel führen, als wenn du jetzt beginnst. 
+
+#### Meta-Beschreibung 
+Nicht vergessen;) Eine kurze Zusammenfassung des Inhalts, evtl. mit Call to action
+
+### Politur 
+
+### Posten
