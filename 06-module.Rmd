@@ -62,6 +62,10 @@ Text kann über die Bilder gelegt werden, indem der folgende Code innerhalb der 
 
 > Videos binden wir bis auf weiteres ein, indem wir sie auf unserem YouTube-Account veröffentlichen und dann über Code auf unserer Website zeigen. Das spart einiges an Arbeit und Speicherplatz auf unsererm Server.
 
+::: {.warnung}
+Binde niemals ein Video nur über den von YouTube angebotenen HTML-Code ein. Selbst die "datenschutzfreundliche" Variante, die YouTube zum Teilen anbietet, lädt automatisch Cookies nach.
+:::
+
 ### Warum muss ich hier aufpassen?
 
 Bei der klassischen Einbindung von Youtube-Videos wird automatisch ein Cookie von Youtube gesetzt, sobald die Website lädt. Dieser Cookie ist nicht notwendig für das Funktionieren der Website und greift unnötig Userdaten ab. Und nebenbei ist sie aufgrund der Datenschutzgrundverordnung der EU (DSGVO) **illegal**.
@@ -82,14 +86,31 @@ Solltest du aus irgendeinem Grund das Video ohne die bunte Box einbinden wollen,
 
 ```
 <div class="video_wrapper">
-		<div class="video_trigger" style="background-image: url('images/Bilder/Stock/akkordeon.jpg'); width=560px ;height: 315px;" data-source="4TLEdX0jtr8">
-			<p class="text-center" style="color: #fff;">Mit dem Aufruf des Videos erklärst Du Dich einverstanden, dass Deine Daten an YouTube übermittelt werden und dass Du die <a href="index.php?option=com_content&amp;view=article&amp;id=18&amp;Itemid=222">Datenschutzerklärung</a> gelesen hast.</p>
-			<input type="button" value="Akzeptieren" class="btn btn-small btn-white btn-transparent" />
-		</div>
-		<div class="video_layer">
-			<iframe src="" width="100%" height="315px" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-		</div>
+	<div class="video_trigger" data-source="tiSduOOPS-c" data-type="youtube">
+		<p class="text-center">Mit dem Aufruf des Videos erklärst Du Dich einverstanden, dass Deine Daten an YouTube übermittelt werden und dass Du die <a href="index.php?option=com_content&amp;view=article&amp;id=18&amp;Itemid=222">Datenschutzerklärung</a> gelesen hast.</p>
+		<button class="btn consent">Akzeptieren</button>
 	</div>
+	<div class="video_layer">
+		<iframe width="100%" height="315px" allowfullscreen="allowfullscreen"></iframe>
+	</div>
+</div>
+```
+Der benötigte JavaScript Source Code ist im Backend unter `/templates/vcp/scripts/general.min.js` eingebunden und sieht wie folgt aus: 
+```
+(function($) {
+    $( document ).ready( function() {
+        if( $( '.video_wrapper' ).length > 0 ) {
+            $( '.video_wrapper' ).each( function() {
+                _wrapper = $( this );
+                _wrapper.children( '.video_trigger' ).children( 'button.btn.consent' ).click( function() {
+                    var _trigger = $( this ).parent();
+                    _trigger.hide();
+                    _trigger.siblings( '.video_layer' ).show().children( 'iframe' ).attr( 'src', 'https://www.youtube-nocookie.com/embed/' + _trigger.attr( 'data-source' ) + '?rel=0&controls=1&showinfo=0&autoplay=1' );
+                });
+            });
+        }
+    });
+})(jQuery);
 ```
 
 Quelle: <https://www.codepalm.de/post/youtube-2-klick-loesung/> (zuletzt abgerufen am 09.10.2022, 21:25 Uhr)
