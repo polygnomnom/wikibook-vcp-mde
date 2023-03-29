@@ -579,43 +579,55 @@ Der dafür genutzte Code ist der folgende:
 ```
 <script type="text/javascript">
 function calculateAge(){
-    // Veranstaltungsbeginn abfragen
-    let textEntry = document.getElementsByClassName('sketchdates-datetime')[0].nextElementSibling.innerHTML;
-    let startDate = new Date(textEntry.substr(6,4), textEntry.substr(3,2) - 1, textEntry.substr(0,2));
-    // Geburtstag abfragen
-    let year = parseInt(document.getElementById('Geburtstagy').value,10);
-	  let month = parseInt(document.getElementById('Geburtstagm').value,10)-1;
-    let day = parseInt(document.getElementById('Geburtstagd').value,10);
-    let age = startDate.getFullYear() - year;
-    // Alter berechnen
-    if (month > startDate.getMonth()) {
-        age = age - 1;
+  // Veranstaltungsbeginn abfragen
+  let textEntry = document.getElementsByClassName('sketchdates-datetime')[0].nextElementSibling.innerHTML;
+  let startDate = new Date(textEntry.substr(6,4), textEntry.substr(3,2) - 1, textEntry.substr(0,2));
+  // Geburtsdatum abfragen
+	let year= parseInt(document.getElementById('Geburtstagy').value,10);
+	let month = parseInt(document.getElementById('Geburtstagm').value,10)-1;
+	let day = parseInt(document.getElementById('Geburtstagd').value,10);
+  // Alter berechnen
+	let age = startDate.getFullYear() - year;
+	if (month > startDate.getMonth()) {
+        	age = age - 1;
+	};
+	if (month === startDate.getMonth()) {
+		if (day > startDate.getDate()) {
+			age = age - 1;
     };
-    if (month === startDate.getMonth()) {
-        if (day > startDate.getDate()) {
-            age = age - 1;
-        }
-    };
-    // Ergebnis ausgeben
-    if (!isNaN(age)) {
-document.getElementById('AlterBeiVeranstaltungsbeginnAnzeige').innerText= "Alter bei Veranstaltungsbeginn: " +(age); 
-    document.getElementById('AlterBeiVeranstaltungsbeginn').value= age.toString(); 
-    };
-}
+  };
+  // Alter ausgeben, falls ein sinnvoller Wert berechnet wurde
+  if (!isNaN(age)) {
+	document.getElementById('AlterBeiVeranstaltungsbeginnAnzeige').innerText= "Alter bei Veranstaltungsbeginn: " +(age); 
+	document.getElementById('AlterBeiVeranstaltungsbeginn').value= age.toString(); 
+  };
+};
 </script>
 ```
 
 #### Anmeldeschluss
 
-Nach Anmeldeschluss soll das Anmeldeformular nicht mehr angezeigt werden. Dies wird gelöst, indem am Formularende ein verstecktes Feld eingefügt wird, in das die Deadline eingegeben wird (Format: DD/MM/YYYY/ HH/MM/SS). Wenn das Formular geladen wird, wird die folgende Funktion aktiviert und löscht alle Felder. Stattdessen wird die Nachricht "Die Anmeldefrist ist bereits abgelaufen." angezeigt:
+Nach Anmeldeschluss soll das Anmeldeformular nicht mehr angezeigt werden. Dies wird gelöst, indem am Formularende ein verstecktes Feld eingefügt wird, in das die Deadline eingegeben wird (Format: `YYYY-MM-DD hh:mm:00`, wie in sketch.dates auch). Wenn das Formular geladen wird, wird die folgende Funktion durch das Attribut `onload="toShowOrNotToShow();"` aktiviert und löscht alle Felder. Stattdessen wird die Nachricht "Die Anmeldefrist ist bereits abgelaufen." angezeigt:
 
 ```
-window.onload = function(){
-    let deadline = document.getElementById('deadline').value;
-    let deadlineDate = new Date(deadline.substr(6,4), deadline.substr(3,2)-1 , deadline.substr(0,2), deadline.substr(11,2), deadline.substr(14,2), deadline.substr(17,2));
-    let today = new Date(); 
-    if (today > deadlineDate){
-        document.getElementById('userForm').innerHTML = "<p>Die Anmeldefrist ist bereits abgelaufen.</p>";
-    }
+function toShowOrNotToShow(){
+  // Anmeldeschluss aus Hidden Field auslesen
+  let deadlinestr = document.getElementById('deadline').value;
+  // Beginn der Veranstaltung ermitteln
+  let textEntry = document.getElementsByClassName('sketchdates-datetime')[0].nextElementSibling.innerHTML;
+  // Default: nach Beginn der Veranstaltung sollte man sich nicht mehr anmelden können. 
+  var deadlineDate = new Date(textEntry.substr(7,4), textEntry.substr(4,2)-1, textEntry.substr(1,2)-1, 23, 59);
+  // falls ein Anmeldeschluss angegeben wurde, konvertiere ihn zu einem Datum
+  if ( !(deadlinestr.trim() == "") ) {
+    deadlineDate = new Date(deadlinestr.substr(0,4), deadlinestr.substr(5,2)-1, deadlinestr.substr(8,2), deadlinestr.substr(11,2), deadlinestr.substr(14,2), deadlinestr.substr(17,2));
+  };
+  // Check ob der Anmeldeschluss bereits abgelaufen ist
+  let today = new Date(); 
+  if (today > deadlineDate){
+    document.getElementById('userForm').innerHTML = "<p>Die Anmeldefrist ist bereits abgelaufen.</p>";
+  };
+  if (today < deadlineDate){
+    document.getElementById('info-deadline').innerHTML +=  " " + deadlineDate.getDate().toString().padStart(2,'0') + "." + (deadlineDate.getMonth()+1).toString().padStart(2,'0') + "." + deadlineDate.getFullYear().toString() + " " + deadlineDate.getHours().toString().padStart(2,'0') + ":" + deadlineDate.getMinutes().toString().padStart(2,'0') + " Uhr";
+  };
 }; 
 ```
