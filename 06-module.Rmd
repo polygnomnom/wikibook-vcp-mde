@@ -80,7 +80,7 @@ Deshalb haben wir uns für eine 2-Klick-Lösung entschieden: Dabei muss der User
 4. Wechsel nun in die Code-Ansicht. Hier ersetzt du die Zeichenfolge im String data-source (zweite Zeile, im div-Element mit der Klasse video_trigger) mit der Zeichenfolge am Ende des Youtube-Links. Z.B. ersetzt du `data-source="5ABE3cc0kq4"` mit `data-source="4TLEdX0jtr8"`
 5. Das Modul kannst du nun auf der Zielseite über die Syntax `{loadposition modulname}` einbinden, also z.B. `{loadposition video_box_2click_pfaditag}`.
 
-## Reiner HTML-Code und Video ohne bunte Box
+## Reiner HTML/JS-Code und Video ohne bunte Box
 
 Solltest du aus irgendeinem Grund das Video ohne die bunte Box einbinden wollen, kannst du den folgenden Code direkt an der gewünschten Stelle im restlichen HTML-Code der Site einfügen:
 
@@ -95,7 +95,11 @@ Solltest du aus irgendeinem Grund das Video ohne die bunte Box einbinden wollen,
 	</div>
 </div>
 ```
+
+Die hier verwendeten CSS-Klassen wurden unter `Erweiterungen > Template > Stile > vcp - Standard` festgelegt.
+
 Der benötigte JavaScript Source Code ist im Backend unter `/templates/vcp/scripts/general.min.js` eingebunden und sieht wie folgt aus: 
+
 ```
 (function($) {
     $( document ).ready( function() {
