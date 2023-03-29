@@ -145,7 +145,7 @@
 <li class="chapter" data-level="7.4.1" data-path="module.html"><a href="module.html#warum-muss-ich-hier-aufpassen"><i class="fa fa-check"></i><b>7.4.1</b> Warum muss ich hier aufpassen?</a></li>
 </ul></li>
 <li class="chapter" data-level="7.5" data-path="module.html"><a href="module.html#video-in-bunter-box"><i class="fa fa-check"></i><b>7.5</b> Video in bunter Box</a></li>
-<li class="chapter" data-level="7.6" data-path="module.html"><a href="module.html#reiner-html-code-und-video-ohne-bunte-box"><i class="fa fa-check"></i><b>7.6</b> Reiner HTML-Code und Video ohne bunte Box</a></li>
+<li class="chapter" data-level="7.6" data-path="module.html"><a href="module.html#reiner-htmljs-code-und-video-ohne-bunte-box"><i class="fa fa-check"></i><b>7.6</b> Reiner HTML/JS-Code und Video ohne bunte Box</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="umgang-mit-medien.html"><a href="umgang-mit-medien.html"><i class="fa fa-check"></i><b>8</b> Umgang mit Medien</a></li>
 <li class="chapter" data-level="9" data-path="matomo-und-metadaten.html"><a href="matomo-und-metadaten.html"><i class="fa fa-check"></i><b>9</b> Matomo und Metadaten</a>
@@ -263,6 +263,9 @@ Bei farbigem Hintergrund bitte den border-radius bei 20px lassen.</p>
 <blockquote>
 <p>Videos binden wir bis auf weiteres ein, indem wir sie auf unserem YouTube-Account veröffentlichen und dann über Code auf unserer Website zeigen. Das spart einiges an Arbeit und Speicherplatz auf unsererm Server.</p>
 </blockquote>
+<div class="warnung">
+<p>Binde niemals ein Video nur über den von YouTube angebotenen HTML-Code ein. Selbst die “datenschutzfreundliche” Variante, die YouTube zum Teilen anbietet, lädt automatisch Cookies nach.</p>
+</div>
 <div id="warum-muss-ich-hier-aufpassen" class="section level3 hasAnchor" number="7.4.1">
 <h3><span class="header-section-number">7.4.1</span> Warum muss ich hier aufpassen?<a href="module.html#warum-muss-ich-hier-aufpassen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Bei der klassischen Einbindung von Youtube-Videos wird automatisch ein Cookie von Youtube gesetzt, sobald die Website lädt. Dieser Cookie ist nicht notwendig für das Funktionieren der Website und greift unnötig Userdaten ab. Und nebenbei ist sie aufgrund der Datenschutzgrundverordnung der EU (DSGVO) <strong>illegal</strong>.</p>
@@ -279,18 +282,34 @@ Bei farbigem Hintergrund bitte den border-radius bei 20px lassen.</p>
 <li>Das Modul kannst du nun auf der Zielseite über die Syntax <code>{loadposition modulname}</code> einbinden, also z.B. <code>{loadposition video_box_2click_pfaditag}</code>.</li>
 </ol>
 </div>
-<div id="reiner-html-code-und-video-ohne-bunte-box" class="section level2 hasAnchor" number="7.6">
-<h2><span class="header-section-number">7.6</span> Reiner HTML-Code und Video ohne bunte Box<a href="module.html#reiner-html-code-und-video-ohne-bunte-box" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="reiner-htmljs-code-und-video-ohne-bunte-box" class="section level2 hasAnchor" number="7.6">
+<h2><span class="header-section-number">7.6</span> Reiner HTML/JS-Code und Video ohne bunte Box<a href="module.html#reiner-htmljs-code-und-video-ohne-bunte-box" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Solltest du aus irgendeinem Grund das Video ohne die bunte Box einbinden wollen, kannst du den folgenden Code direkt an der gewünschten Stelle im restlichen HTML-Code der Site einfügen:</p>
 <pre><code>&lt;div class=&quot;video_wrapper&quot;&gt;
-        &lt;div class=&quot;video_trigger&quot; style=&quot;background-image: url(&#39;images/Bilder/Stock/akkordeon.jpg&#39;); width=560px ;height: 315px;&quot; data-source=&quot;4TLEdX0jtr8&quot;&gt;
-            &lt;p class=&quot;text-center&quot; style=&quot;color: #fff;&quot;&gt;Mit dem Aufruf des Videos erklärst Du Dich einverstanden, dass Deine Daten an YouTube übermittelt werden und dass Du die &lt;a href=&quot;index.php?option=com_content&amp;amp;view=article&amp;amp;id=18&amp;amp;Itemid=222&quot;&gt;Datenschutzerklärung&lt;/a&gt; gelesen hast.&lt;/p&gt;
-            &lt;input type=&quot;button&quot; value=&quot;Akzeptieren&quot; class=&quot;btn btn-small btn-white btn-transparent&quot; /&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;video_layer&quot;&gt;
-            &lt;iframe src=&quot;&quot; width=&quot;100%&quot; height=&quot;315px&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;</code></pre>
+    &lt;div class=&quot;video_trigger&quot; data-source=&quot;tiSduOOPS-c&quot; data-type=&quot;youtube&quot;&gt;
+        &lt;p class=&quot;text-center&quot;&gt;Mit dem Aufruf des Videos erklärst Du Dich einverstanden, dass Deine Daten an YouTube übermittelt werden und dass Du die &lt;a href=&quot;index.php?option=com_content&amp;amp;view=article&amp;amp;id=18&amp;amp;Itemid=222&quot;&gt;Datenschutzerklärung&lt;/a&gt; gelesen hast.&lt;/p&gt;
+        &lt;button class=&quot;btn consent&quot;&gt;Akzeptieren&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;video_layer&quot;&gt;
+        &lt;iframe width=&quot;100%&quot; height=&quot;315px&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>Die hier verwendeten CSS-Klassen wurden unter <code>Erweiterungen &gt; Template &gt; Stile &gt; vcp - Standard</code> festgelegt.</p>
+<p>Der benötigte JavaScript Source Code ist im Backend unter <code>/templates/vcp/scripts/general.min.js</code> eingebunden und sieht wie folgt aus:</p>
+<pre><code>(function($) {
+    $( document ).ready( function() {
+        if( $( &#39;.video_wrapper&#39; ).length &gt; 0 ) {
+            $( &#39;.video_wrapper&#39; ).each( function() {
+                _wrapper = $( this );
+                _wrapper.children( &#39;.video_trigger&#39; ).children( &#39;button.btn.consent&#39; ).click( function() {
+                    var _trigger = $( this ).parent();
+                    _trigger.hide();
+                    _trigger.siblings( &#39;.video_layer&#39; ).show().children( &#39;iframe&#39; ).attr( &#39;src&#39;, &#39;https://www.youtube-nocookie.com/embed/&#39; + _trigger.attr( &#39;data-source&#39; ) + &#39;?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&#39; );
+                });
+            });
+        }
+    });
+})(jQuery);</code></pre>
 <p>Quelle: <a href="https://www.codepalm.de/post/youtube-2-klick-loesung/" class="uri">https://www.codepalm.de/post/youtube-2-klick-loesung/</a> (zuletzt abgerufen am 09.10.2022, 21:25 Uhr)</p>
 
 </div>

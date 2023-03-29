@@ -86,7 +86,7 @@ kontakt-tabs
 ein-youtube-video-einbinden
 warum-muss-ich-hier-aufpassen
 video-in-bunter-box
-reiner-html-code-und-video-ohne-bunte-box
+reiner-htmljs-code-und-video-ohne-bunte-box
 umgang-mit-medien
 matomo-und-metadaten
 metadaten

@@ -145,7 +145,7 @@
 <li class="chapter" data-level="7.4.1" data-path="module.html"><a href="module.html#warum-muss-ich-hier-aufpassen"><i class="fa fa-check"></i><b>7.4.1</b> Warum muss ich hier aufpassen?</a></li>
 </ul></li>
 <li class="chapter" data-level="7.5" data-path="module.html"><a href="module.html#video-in-bunter-box"><i class="fa fa-check"></i><b>7.5</b> Video in bunter Box</a></li>
-<li class="chapter" data-level="7.6" data-path="module.html"><a href="module.html#reiner-html-code-und-video-ohne-bunte-box"><i class="fa fa-check"></i><b>7.6</b> Reiner HTML-Code und Video ohne bunte Box</a></li>
+<li class="chapter" data-level="7.6" data-path="module.html"><a href="module.html#reiner-htmljs-code-und-video-ohne-bunte-box"><i class="fa fa-check"></i><b>7.6</b> Reiner HTML/JS-Code und Video ohne bunte Box</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="umgang-mit-medien.html"><a href="umgang-mit-medien.html"><i class="fa fa-check"></i><b>8</b> Umgang mit Medien</a></li>
 <li class="chapter" data-level="9" data-path="matomo-und-metadaten.html"><a href="matomo-und-metadaten.html"><i class="fa fa-check"></i><b>9</b> Matomo und Metadaten</a>
@@ -1162,41 +1162,53 @@ Fängt der Code-Schnipsel mit global an, dann handelt es sich um Einstellungen, 
 <p>Der dafür genutzte Code ist der folgende:</p>
 <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
 function calculateAge(){
-    // Veranstaltungsbeginn abfragen
-    let textEntry = document.getElementsByClassName(&#39;sketchdates-datetime&#39;)[0].nextElementSibling.innerHTML;
-    let startDate = new Date(textEntry.substr(6,4), textEntry.substr(3,2) - 1, textEntry.substr(0,2));
-    // Geburtstag abfragen
-    let year = parseInt(document.getElementById(&#39;Geburtstagy&#39;).value,10);
-      let month = parseInt(document.getElementById(&#39;Geburtstagm&#39;).value,10)-1;
+  // Veranstaltungsbeginn abfragen
+  let textEntry = document.getElementsByClassName(&#39;sketchdates-datetime&#39;)[0].nextElementSibling.innerHTML;
+  let startDate = new Date(textEntry.substr(6,4), textEntry.substr(3,2) - 1, textEntry.substr(0,2));
+  // Geburtsdatum abfragen
+    let year= parseInt(document.getElementById(&#39;Geburtstagy&#39;).value,10);
+    let month = parseInt(document.getElementById(&#39;Geburtstagm&#39;).value,10)-1;
     let day = parseInt(document.getElementById(&#39;Geburtstagd&#39;).value,10);
+  // Alter berechnen
     let age = startDate.getFullYear() - year;
-    // Alter berechnen
     if (month &gt; startDate.getMonth()) {
-        age = age - 1;
+            age = age - 1;
     };
     if (month === startDate.getMonth()) {
         if (day &gt; startDate.getDate()) {
             age = age - 1;
-        }
     };
-    // Ergebnis ausgeben
-    if (!isNaN(age)) {
-document.getElementById(&#39;AlterBeiVeranstaltungsbeginnAnzeige&#39;).innerText= &quot;Alter bei Veranstaltungsbeginn: &quot; +(age); 
+  };
+  // Alter ausgeben, falls ein sinnvoller Wert berechnet wurde
+  if (!isNaN(age)) {
+    document.getElementById(&#39;AlterBeiVeranstaltungsbeginnAnzeige&#39;).innerText= &quot;Alter bei Veranstaltungsbeginn: &quot; +(age); 
     document.getElementById(&#39;AlterBeiVeranstaltungsbeginn&#39;).value= age.toString(); 
-    };
-}
+  };
+};
 &lt;/script&gt;</code></pre>
 </div>
 <div id="anmeldeschluss" class="section level4 hasAnchor" number="5.2.4.2">
 <h4><span class="header-section-number">5.2.4.2</span> Anmeldeschluss<a href="formulare-und-rsformpro.html#anmeldeschluss" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Nach Anmeldeschluss soll das Anmeldeformular nicht mehr angezeigt werden. Dies wird gelöst, indem am Formularende ein verstecktes Feld eingefügt wird, in das die Deadline eingegeben wird (Format: DD/MM/YYYY/ HH/MM/SS). Wenn das Formular geladen wird, wird die folgende Funktion aktiviert und löscht alle Felder. Stattdessen wird die Nachricht “Die Anmeldefrist ist bereits abgelaufen.” angezeigt:</p>
-<pre><code>window.onload = function(){
-    let deadline = document.getElementById(&#39;deadline&#39;).value;
-    let deadlineDate = new Date(deadline.substr(6,4), deadline.substr(3,2)-1 , deadline.substr(0,2), deadline.substr(11,2), deadline.substr(14,2), deadline.substr(17,2));
-    let today = new Date(); 
-    if (today &gt; deadlineDate){
-        document.getElementById(&#39;userForm&#39;).innerHTML = &quot;&lt;p&gt;Die Anmeldefrist ist bereits abgelaufen.&lt;/p&gt;&quot;;
-    }
+<p>Nach Anmeldeschluss soll das Anmeldeformular nicht mehr angezeigt werden. Dies wird gelöst, indem am Formularende ein verstecktes Feld eingefügt wird, in das die Deadline eingegeben wird (Format: <code>YYYY-MM-DD hh:mm:00</code>, wie in sketch.dates auch). Wenn das Formular geladen wird, wird die folgende Funktion durch das Attribut <code>onload="toShowOrNotToShow();"</code> aktiviert und löscht alle Felder. Stattdessen wird die Nachricht “Die Anmeldefrist ist bereits abgelaufen.” angezeigt:</p>
+<pre><code>function toShowOrNotToShow(){
+  // Anmeldeschluss aus Hidden Field auslesen
+  let deadlinestr = document.getElementById(&#39;deadline&#39;).value;
+  // Beginn der Veranstaltung ermitteln
+  let textEntry = document.getElementsByClassName(&#39;sketchdates-datetime&#39;)[0].nextElementSibling.innerHTML;
+  // Default: nach Beginn der Veranstaltung sollte man sich nicht mehr anmelden können. 
+  var deadlineDate = new Date(textEntry.substr(7,4), textEntry.substr(4,2)-1, textEntry.substr(1,2)-1, 23, 59);
+  // falls ein Anmeldeschluss angegeben wurde, konvertiere ihn zu einem Datum
+  if ( !(deadlinestr.trim() == &quot;&quot;) ) {
+    deadlineDate = new Date(deadlinestr.substr(0,4), deadlinestr.substr(5,2)-1, deadlinestr.substr(8,2), deadlinestr.substr(11,2), deadlinestr.substr(14,2), deadlinestr.substr(17,2));
+  };
+  // Check ob der Anmeldeschluss bereits abgelaufen ist
+  let today = new Date(); 
+  if (today &gt; deadlineDate){
+    document.getElementById(&#39;userForm&#39;).innerHTML = &quot;&lt;p&gt;Die Anmeldefrist ist bereits abgelaufen.&lt;/p&gt;&quot;;
+  };
+  if (today &lt; deadlineDate){
+    document.getElementById(&#39;info-deadline&#39;).innerHTML +=  &quot; &quot; + deadlineDate.getDate().toString().padStart(2,&#39;0&#39;) + &quot;.&quot; + (deadlineDate.getMonth()+1).toString().padStart(2,&#39;0&#39;) + &quot;.&quot; + deadlineDate.getFullYear().toString() + &quot; &quot; + deadlineDate.getHours().toString().padStart(2,&#39;0&#39;) + &quot;:&quot; + deadlineDate.getMinutes().toString().padStart(2,&#39;0&#39;) + &quot; Uhr&quot;;
+  };
 }; </code></pre>
 
 </div>

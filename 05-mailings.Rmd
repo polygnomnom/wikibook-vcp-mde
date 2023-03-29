@@ -1,7 +1,10 @@
 # Newsletter & Mailings (Acy Mailing)
 
+> Wie und wofür nutzen wir AcyMailing? 
+
 Um allen Mitgliedern Zugang zu den wichtigsten Informationen zu geben, haben wir Newsletter eingerichtet.
 Derzeit gibt es zwei Newsletter: 
+
 * den __Infoknoten__, ein allgemeiner Newsletter für Mitglieder und Interessierte
 * den R\*R-Newsletter (der genau das tut, was der Name andeutet)
 
@@ -11,31 +14,37 @@ Derzeit gibt es zwei Newsletter:
 
 Die Regelung von Accounts ist gewissermaßen überflüssig, da AcyMailing über Joomla mitverwaltet wird.
 Trotzdem ist es sinnvoll, ein paar Bestimmungen zu treffen. Zugänge zu AcyMailing sollen bestehen für: 
+
 * Arbeitskreis Öffentlichkeitsarbeit
 * Landesbüro 
 * Landesleitung
 * R\*R-Beauftragung
 
-Falls es möglich ist, REchte auszudifferenzieren, sollte es außerdem für alle übrigen Beauftragungen möglich sein, Zugang zu AcyMailing zu erhalten.
+Falls es möglich ist, Rechte auszudifferenzieren, sollte es außerdem für alle übrigen Beauftragungen möglich sein, Zugang zu AcyMailing zu erhalten.
 
 ### Empfänger\*innen
 
 Es gibt aktuell zwei Listen: 
+
 * Mitglieder & Interessierte (Infos für Mitglieder. Zu Veranstaltungen, Ausschreibungen, Terminen, Aktionen, Verbandsinternem. Alle zwei bis vier Wochen)
 * R\*R (für R\*R und alle, die sich der Stufe verbunden fühlen. Weniger Newsletter, mehr Verteiler. Neueste Informationen zu Aktionen und Unternehmungen der R\*R-Stufe. Unregelmäßig)
 
 Bei der Anmeldung wird abgefragt: 
+
 * Name (verpflichtend)
 * Welche Newsletter sollen abonniert werden? 
-Neumitglieder werden vom Landesbüro eingetragen. Bei allen Listen ist ein freies Ein- und Austragen möglich.
+
+Mehr Informationen könnten nur abgefragt werden, wenn wir AcyMailing Pro nutzen würden. Neumitglieder werden vom Landesbüro eingetragen. Bei allen Listen ist ein freies Ein- und Austragen möglich.
 
 ### Gestaltung und Konventionen
 
 Die Bounce-Back-Adresse wird newsletterspezifisch festgelegt. Für 
+
 * den Infoknoten (Mitglieder und Interessierte) ist es das Landesbüro, 
 * den R\*R-Newsletter ist es die R\*R-Beauftragung, wenn sie besetzt ist (ansonsten das Landesbüro).
 
 Bei dem Versand eines Newsletters kann auch eine Antwort-Adresse angegeben werden. Für 
+
 * den Infoknoten ist dies standardmäßig die E-Mail-Adresse des Landesbüros
 * den R*R-Newsletter die E-Mail-Adresse der R\*R-Beauftragung.
 
@@ -45,6 +54,7 @@ Bilder werden immmer über HTML eingebunden und nie eingebettet, damit die Newsl
 
 Tracking: Wie bei allen digitalen Anwendungen stellt sich auch beim Newsletter die Frage: wie sehr und was wollen wir tracken? Dazu ist es nützlich zu verstehen, was die eigenen Ansprüche sind.
 Im AK Öffentlichkeitsarbeit haben wir uns darauf geeinigt, dass wir die folgenden Fragen mithilfe von Tracking beantworten können wollen: 
+
 * Kommt der Newsletter an? 
 * Wird der Newsletter geöffnet? 
 * Wie häufig werden verlinkte Inhalte tatsächlich geöffnet? 
@@ -53,16 +63,17 @@ Wir verzichten bewusst auf Geo-Tracking.
 
 ## Infoknoten
 
-Der Infokniten ist ein dreiwöchig erscheinender Newsletter mit den wichtigsten Informationen aus unserem VCP-Land.
+Der Infoknoten ist ein dreiwöchig erscheinender Newsletter mit den wichtigsten Informationen aus unserem VCP-Land.
 Er erscheint dienstags, der Redaktionsschluss ist jeweils am Freitag zuvor.
 Alle Mitglieder und außenstehende Personen können Texte zur Veröffentlichung einreichen. Ob diese im Infoknoten veröffentlicht werden, entscheidet die Redaktion.
 
-Für satzungsgemäße LV-Einladungen gibt es getrennte E-Mails, damit auch Mitglieder erreicht werden, die den Infoknoten nicht abonniert haben.
+Für satzungsgemäße LV-Einladungen gibt es getrennte E-Mails, damit auch Mitglieder erreicht werden, die den Infoknoten nicht abonniert haben. In solchen Fällen nutzen wir AcyMailing nicht.
 
-Das Landesbüro und der AK Öffentlichkeitsarbeit verfassenden Infoknoten. Nach Möglichkeit übernimmt der AK Öffentlichkeitsarbeit diese Aufgabe, um das Landesbüro zu entlasten.
+Das Landesbüro und der AK Öffentlichkeitsarbeit verfassen  den Infoknoten. Nach Möglichkeit übernimmt der AK Öffentlichkeitsarbeit diese Aufgabe, um das Landesbüro zu entlasten.
 Über die Inhalte entscheidet die Redaktion (AK Öffentlichkeitsarbeit und mindestens ein Landesleitungs-Mitglied) bzw. die redaktionell verantwortliche Person. 
 
 Der Infoknoten hat den folgenden Aufbau: 
+
 1. Header 
     * inkl. Logo und Datum
 2. Begrüßung 
@@ -76,13 +87,12 @@ Der Infoknoten hat den folgenden Aufbau:
     * muss leider händisch erstellt werden
 4. Anstehende Termine (die nächsten vier Termine, vorzugsweise in unserem VCP-Land inkl. Verknüpfungen zu unserem Kalender)
 5. Neues aus dem Land 
-    * die letzten zwei Blogbeiträge und aktuelle Meldungen: 
-    1.	Eigene Veranstaltungen 
-    2.	Meldungen des Labüs 
-    3.	neueste (zwei) Blogartikel
-    4.	Meldungen von VCP / rdp
-    5.	Meldungen von anderen Dachverbänden und Bündnissen (bejm, kjr, U4R; ggf. mit Logo oder Sharepic)
-    6.	Einsendungen (nach redaktioneller Entscheidung)
+    * Eigene Veranstaltungen 
+    * Meldungen des Labüs 
+    * neueste (zwei) Blogartikel
+    * Meldungen von VCP / rdp
+    * Meldungen von anderen Dachverbänden und Bündnissen (bejm, kjr, U4R; ggf. mit Logo oder Sharepic)
+    * Einsendungen (nach redaktioneller Entscheidung)
 6. Was gibt's zu tun? 
     * Stellenausschreibungen für freie Ämter / Aufgaben
 7. Footer 
@@ -96,4 +106,5 @@ Der Infoknoten hat den folgenden Aufbau:
 Aktuell gibt es kein Konzept für diesen Newsletter.
 
 ## AcyMailing
+
 Zur Erstellung, Verwaltung und Analyse unserer Newsletter nutzen wir AcyMailing.
