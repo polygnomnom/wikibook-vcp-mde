@@ -12,7 +12,7 @@ verfahrensweise-mit-den-lizenzen
 verfahrensweise-einbindung-alter-medien
 verfahrensweise-kommende-veranstaltungen
 beitragserstellung
-how-to-joomla-editor
+how-to-jce-editor
 benutzeroberfläche
 tabellen
 links
