@@ -42,3 +42,9 @@ blockquote {
 .warnung p:last-child, blockquote p:last-child {
   margin-bottom: 0em !important;
 }
+
+/* Hervorhebung von Wörtern */
+.hl{
+  background-color:#fecf16; 
+  color: #603609
+}
