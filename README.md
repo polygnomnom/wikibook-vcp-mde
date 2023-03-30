@@ -20,7 +20,7 @@ kann eine Box mit rotem linken Rand ausgegeben werden. Sie ist für Warnungen ge
 
 ## Hervorhebung von Wörtern
 
-Einzelne Wörter und Textpassagen können mit `<span class="hl"> Hervorgehoben </span>` hervorgehoben werden. <span class="hl">Das sieht dann so aus</span>.
+Einzelne Wörter und Textpassagen können mit `<span class="hl"> Hervorgehoben </span>` hervorgehoben werden. <span class="background-color:#fecf16; color: #603609">Das sieht dann so aus</span>.
 
 # Credits 
 Das Projekt basiert auf **R Markdown** and **bookdown** (https://github.com/rstudio/bookdown). 
