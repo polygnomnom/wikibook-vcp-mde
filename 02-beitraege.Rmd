@@ -10,7 +10,7 @@
 
 ### Benutzeroberfläche 
 
-![So ist der JCE Editor aufgebaut.](../_bookdown_files/_main_files/figure-html/Editor_Aufbau.png)
+![So ist der JCE Editor aufgebaut.](_main_files/figure-html/Editor_Aufbau.png)
 
 In dem Bild ist zu sehen, wie der JCE Editor aufgebaut ist. Es gibt die folgenden Bereiche im User Interface: 
 
