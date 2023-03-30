@@ -4,6 +4,24 @@
 
 ### Benutzeroberfläche 
 
+![So ist der JCE Editor aufgebaut.](/_bookdown_files/_main_files/figure-html/Editor_Aufbau.png)
+
+In dem Bild ist zu sehen, wie der Editor aufgebaut ist. Es gibt die folgenden Bereiche im User Interface: 
+
+| Name | Funktion, Nutzen, Bedeutung |
+| ---- | --------------------------- |
+| <span style="color:#e94653;">Tabs</span> | Über die Tabs gelangst du zu den Einstellungen für deinen Beitrag, z.B. dem Titelbild, den Metadaten, der Autor\*innen-Festlegung, ... |
+| <span style="color:#00b0eb;">Textwerkzeuge</span> | Mithilfe der Textwerkzeuge kannst du den eingegebenen Text (wie in Word oder LibreOffice auch) bearbeiten. Zusätzlich gibt es die Option, den Text als HTML-Code anzeigen zu lassen. Das kann praktisch sein, wenn es Fehler in der Darstellung gibt. |
+| <span style="color:#004287ff;">Textframe</span> | Hier gibst du deinen Text ein. |
+| <span style="color:#603609;">Weitere Optionen</span> | Über diese Leiste kannst du u.a. das Weiterlesen-Element einfügen |
+| <span style="color:#fecf16;">Seitenleiste</span> | Die Seitenleiste im Inhalt-Tab zeigt dir, ob der Artikel bereits veröffentlicht ist. Außerdem kannst du hier eine Notiz vermerken, die auch in der Beitragsliste im Backend zu sehen ist. |
+
+::: {.warnung}
+Füge **niemals** Text aus Word via Copy & Paste ein. Falls du Text aus Word kopieren und im Editor einfügen möchest, nutze die Text-Einfügen Box bei den Textwerkzeugen.
+:::
+
+Wieso ist das so? Wenn du Text aus Word herüberkopierst, enthält dieser noch allerlei Formatierungsinformationen, die den HTML-Code schlecht lesbar machen, zu Bugs führen können und ggf. zu einer geringeren Barrierefreiheit führen. 
+
 ### Tabellen
 
 Tabellen können in verschiedenen Stilen erstellt werden. Die folgenden Varianten stehen zur Auswahl: 
