@@ -30,6 +30,23 @@ Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (gg
 | Optionen für Zusatz | Nein                    | Da sollte nichts drin stehen.| 
 | Onlinebezahlung     | Nein                    | Theoretisch gäbe es die Möglichkeit zur Online-Zahlung. Dieses Modul nutzen wir jedoch nicht.|
 
+<script type="text/javascript">
+  window.onload = function markYes() {
+    zellen = document.querySelectorAll('td');
+    for (let i = 0; i < zellen.length; i++) { 
+      if ( zellen[i].innerHTML == 'Ja' ) {
+          zellen[i].parentNode.style = "border-left: 4px solid #5cbd00;";
+      };
+      if ( zellen[i].innerHTML == 'Nein' ) {
+          zellen[i].parentNode.style = "border-left: 4px solid #e94653;";
+      };
+      if ( zellen[i].innerHTML == 'Vielleicht' ) {
+          zellen[i].parentNode.style = "border-left: 4px solid #fecf16;";
+      };
+    };
+  }
+</script>
+
 * Beschreibung des Termins: Hier kannst du die Terminbeschreibung einfügen. Ebenfalls hier werden Anmeldeformular und Fördermittelgeberkasten eingebunden. Alle notwendigen Hinweise dazu folgen nun:
   * Für Überschriften kannst du `Heading 2` oder niedriger nutzen. Verwende nie `Heading 1`.
   * Bitte benutze die Logos unserer Fördermittelgeber, wenn deine Veranstaltung von ihnen gefördert wird. Die Auswahl unserer gängigen Fördermittelgeber sind hier schon eingefügt, wenn du darüber hinaus noch Fördermittelgeber hast, wende dich bitte an [oeffentlichkeitsarbeit@vcp-mitteldeutschland.de](mailto:oeffentlichkeitsarbeit@vcp-mitteldeutschland.de), wir machen das für dich.  
@@ -46,18 +63,14 @@ Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (gg
 
 Eine Anleitung dazu, wie du ein Anmeldeformular einbinden kannst, findest du im Kapitel [Formulare und RSForm!Pro]
 
-## Termin bearbeiten
-
-Unter der Terminübersicht von sketch.dates kannst du alle Termine bearbeiten. Du suchst einen alten Termin? Dann gehe auf Filter-Optionen und stelle die Anzeige auf "Vergangene" um.
-
-## Veranstaltungsanmeldung erstellen
+### Veranstaltungsanmeldung erstellen
 
 Veranstaltungsanmeldungen werden mit RSForm!Pro erstellt. Es gibt zwei Vorlagen:
 
 * einfach: Fragt nur die wichtigsten Informationen ab. Die Deadline-Option und Altersberechnung ist hier noch nicht implementiert
 * umfassend: Fragt alle Informationen ab, die das VL-Herz begehrt. Das Alter bei Veranstaltungsbeginn wird automatisch berechnet. Eine Anmeldefrist kann festgelegt werden.
 
-### Vorgehensweise
+#### Vorgehensweise
 
 1. Du kopierst die Vorlage, die du nutzen willst.
 2. Unter "Formular Eigenschaften" änderst du Titel und Formularnamen. Der Formularname ist nach dem folgenden Schema aufgebaut: `anmeldung-YYYY-veranstaltungsname`
@@ -65,7 +78,7 @@ Veranstaltungsanmeldungen werden mit RSForm!Pro erstellt. Es gibt zwei Vorlagen:
 4. Nun kannst du die Formularfelder durchgehen. Alle Felder, die Informationen abfragen, die du nicht für die Veranstaltung benötigst, solltest du aus Gründen der Datensparsamkeit löschen.
 5. Sobald du das Anmeldeformular veröffentlichst, können sich Teilnehmende anmelden. Die Anmeldungen findest du in der zu deinem Formular zugehörigen Datenbank.
 
-## Abmeldeformular
+### Abmeldeformular
 
 ::: {.warnung}
 Rechtlich sind wir verpflichtet, auch ein Abmeldeformular auf unserer Website anzubieten.
@@ -74,3 +87,30 @@ Rechtlich sind wir verpflichtet, auch ein Abmeldeformular auf unserer Website an
 Das Abmeldeformular musst du über `{loadposition form-abmeldung-designed}`  nach dem Anmeldeformular einbinden. 
 
 > Im Fall der Fälle gibt es auch ein Abmeldeformular unter [vcp-mitteldeutschland.de/kontakt](https://vcp-mitteldeutschland.de/kontakt). Besser ist es jedoch, wenn du das Abmeldeformular auch unterhalb der Anmeldung einbindest!
+
+## Termin bearbeiten
+
+Unter der Terminübersicht von sketch.dates kannst du alle Termine bearbeiten. Du suchst einen alten Termin? Dann gehe auf Filter-Optionen und stelle die Anzeige auf "Vergangene" um.
+
+## Weiterführende Infos zu sketch.dates 
+
+> Dieser Abschnitt ist vermutlich nur relevant für dich, wenn du Modifikationen in sketch.dates vornehmen willst. 
+
+sketch.dates wurde von der Agentur sketch.media entwickelt. 
+
+### Darstellung des Kalenders
+
+Neben der von uns genutzten "Kalender"-Ansicht gibt weitere Darstellungsmöglichkeiten für Termine:
+
+| Bezeichnung| Screenshot |
+| --------------------------- | ---------- |
+| Monatliche Ansicht? Ja      | ![Screenshot: Monatliche Ansicht? Ja.](_main_files/figure-html/Kalender-monatliche-Ansicht-ja.png) |
+| Monatliche Ansicht? Nein     | ![Screenshot: Monatliche Ansicht? Nein.](_main_files/figure-html/Kalender-monatliche-Ansicht-nein.png) |
+| Kalender-Suche      | ![Screenshot: Kalender-Suche](_main_files/figure-html/Kalender-Suche.png) |
+| Kalender Kartenansicht     | ![Screenshot: Kalender Kartenansicht](_main_files/figure-html/Kalender-Kartenansicht.png) |
+
+Aktuell nutzen wir die Darstellung Kalender-Suche, da sie uns am praktikabelsten erscheint. 
+
+### Language Override
+
+Sollte der Bedarf bestehen, können Kalenderkategorien mithilfe von Language Override umbenannt werden.

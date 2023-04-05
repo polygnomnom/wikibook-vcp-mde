@@ -23,7 +23,7 @@
 <meta name="author" content="Arbeitskreis Öffentlichkeitsarbeit VCP Mitteldeutschland" />
 
 
-<meta name="date" content="2023-03-30" />
+<meta name="date" content="2023-04-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -111,13 +111,17 @@
 </ul></li>
 <li class="chapter" data-level="4" data-path="kalender.html"><a href="kalender.html"><i class="fa fa-check"></i><b>4</b> Kalender</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="kalender.html"><a href="kalender.html#termin-erstellen-in-sketch.dates"><i class="fa fa-check"></i><b>4.1</b> Termin erstellen in sketch.dates</a></li>
-<li class="chapter" data-level="4.2" data-path="kalender.html"><a href="kalender.html#termin-bearbeiten"><i class="fa fa-check"></i><b>4.2</b> Termin bearbeiten</a></li>
-<li class="chapter" data-level="4.3" data-path="kalender.html"><a href="kalender.html#veranstaltungsanmeldung-erstellen"><i class="fa fa-check"></i><b>4.3</b> Veranstaltungsanmeldung erstellen</a>
+<li class="chapter" data-level="4.1" data-path="kalender.html"><a href="kalender.html#termin-erstellen-in-sketch.dates"><i class="fa fa-check"></i><b>4.1</b> Termin erstellen in sketch.dates</a>
 <ul>
-<li class="chapter" data-level="4.3.1" data-path="kalender.html"><a href="kalender.html#vorgehensweise"><i class="fa fa-check"></i><b>4.3.1</b> Vorgehensweise</a></li>
+<li class="chapter" data-level="4.1.1" data-path="kalender.html"><a href="kalender.html#veranstaltungsanmeldung-erstellen"><i class="fa fa-check"></i><b>4.1.1</b> Veranstaltungsanmeldung erstellen</a></li>
+<li class="chapter" data-level="4.1.2" data-path="kalender.html"><a href="kalender.html#abmeldeformular"><i class="fa fa-check"></i><b>4.1.2</b> Abmeldeformular</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="kalender.html"><a href="kalender.html#abmeldeformular"><i class="fa fa-check"></i><b>4.4</b> Abmeldeformular</a></li>
+<li class="chapter" data-level="4.2" data-path="kalender.html"><a href="kalender.html#termin-bearbeiten"><i class="fa fa-check"></i><b>4.2</b> Termin bearbeiten</a></li>
+<li class="chapter" data-level="4.3" data-path="kalender.html"><a href="kalender.html#weiterführende-infos-zu-sketch.dates"><i class="fa fa-check"></i><b>4.3</b> Weiterführende Infos zu sketch.dates</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="kalender.html"><a href="kalender.html#darstellung-des-kalenders"><i class="fa fa-check"></i><b>4.3.1</b> Darstellung des Kalenders</a></li>
+<li class="chapter" data-level="4.3.2" data-path="kalender.html"><a href="kalender.html#language-override"><i class="fa fa-check"></i><b>4.3.2</b> Language Override</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="formulare-und-rsformpro.html"><a href="formulare-und-rsformpro.html"><i class="fa fa-check"></i><b>5</b> Formulare und RSForm!Pro</a>
 <ul>
@@ -326,6 +330,22 @@
 </tr>
 </tbody>
 </table>
+<script type="text/javascript">
+  window.onload = function markYes() {
+    zellen = document.querySelectorAll('td');
+    for (let i = 0; i < zellen.length; i++) { 
+      if ( zellen[i].innerHTML == 'Ja' ) {
+          zellen[i].parentNode.style = "border-left: 4px solid #5cbd00;";
+      };
+      if ( zellen[i].innerHTML == 'Nein' ) {
+          zellen[i].parentNode.style = "border-left: 4px solid #e94653;";
+      };
+      if ( zellen[i].innerHTML == 'Vielleicht' ) {
+          zellen[i].parentNode.style = "border-left: 4px solid #fecf16;";
+      };
+    };
+  }
+</script>
 <ul>
 <li>Beschreibung des Termins: Hier kannst du die Terminbeschreibung einfügen. Ebenfalls hier werden Anmeldeformular und Fördermittelgeberkasten eingebunden. Alle notwendigen Hinweise dazu folgen nun:
 <ul>
@@ -344,20 +364,15 @@ Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)</li>
 </ul></li>
 </ul>
 <p>Eine Anleitung dazu, wie du ein Anmeldeformular einbinden kannst, findest du im Kapitel <a href="formulare-und-rsformpro.html#formulare-und-rsformpro">Formulare und RSForm!Pro</a></p>
-</div>
-<div id="termin-bearbeiten" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Termin bearbeiten<a href="kalender.html#termin-bearbeiten" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Unter der Terminübersicht von sketch.dates kannst du alle Termine bearbeiten. Du suchst einen alten Termin? Dann gehe auf Filter-Optionen und stelle die Anzeige auf “Vergangene” um.</p>
-</div>
-<div id="veranstaltungsanmeldung-erstellen" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> Veranstaltungsanmeldung erstellen<a href="kalender.html#veranstaltungsanmeldung-erstellen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="veranstaltungsanmeldung-erstellen" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Veranstaltungsanmeldung erstellen<a href="kalender.html#veranstaltungsanmeldung-erstellen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Veranstaltungsanmeldungen werden mit RSForm!Pro erstellt. Es gibt zwei Vorlagen:</p>
 <ul>
 <li>einfach: Fragt nur die wichtigsten Informationen ab. Die Deadline-Option und Altersberechnung ist hier noch nicht implementiert</li>
 <li>umfassend: Fragt alle Informationen ab, die das VL-Herz begehrt. Das Alter bei Veranstaltungsbeginn wird automatisch berechnet. Eine Anmeldefrist kann festgelegt werden.</li>
 </ul>
-<div id="vorgehensweise" class="section level3 hasAnchor" number="4.3.1">
-<h3><span class="header-section-number">4.3.1</span> Vorgehensweise<a href="kalender.html#vorgehensweise" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="vorgehensweise" class="section level4 hasAnchor" number="4.1.1.1">
+<h4><span class="header-section-number">4.1.1.1</span> Vorgehensweise<a href="kalender.html#vorgehensweise" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
 <li>Du kopierst die Vorlage, die du nutzen willst.</li>
 <li>Unter “Formular Eigenschaften” änderst du Titel und Formularnamen. Der Formularname ist nach dem folgenden Schema aufgebaut: <code>anmeldung-YYYY-veranstaltungsname</code></li>
@@ -367,8 +382,8 @@ Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)</li>
 </ol>
 </div>
 </div>
-<div id="abmeldeformular" class="section level2 hasAnchor" number="4.4">
-<h2><span class="header-section-number">4.4</span> Abmeldeformular<a href="kalender.html#abmeldeformular" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="abmeldeformular" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Abmeldeformular<a href="kalender.html#abmeldeformular" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="warnung">
 <p>Rechtlich sind wir verpflichtet, auch ein Abmeldeformular auf unserer Website anzubieten.</p>
 </div>
@@ -376,7 +391,58 @@ Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)</li>
 <blockquote>
 <p>Im Fall der Fälle gibt es auch ein Abmeldeformular unter <a href="https://vcp-mitteldeutschland.de/kontakt">vcp-mitteldeutschland.de/kontakt</a>. Besser ist es jedoch, wenn du das Abmeldeformular auch unterhalb der Anmeldung einbindest!</p>
 </blockquote>
+</div>
+</div>
+<div id="termin-bearbeiten" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Termin bearbeiten<a href="kalender.html#termin-bearbeiten" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Unter der Terminübersicht von sketch.dates kannst du alle Termine bearbeiten. Du suchst einen alten Termin? Dann gehe auf Filter-Optionen und stelle die Anzeige auf “Vergangene” um.</p>
+</div>
+<div id="weiterführende-infos-zu-sketch.dates" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Weiterführende Infos zu sketch.dates<a href="kalender.html#weiterführende-infos-zu-sketch.dates" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p>Dieser Abschnitt ist vermutlich nur relevant für dich, wenn du Modifikationen in sketch.dates vornehmen willst.</p>
+</blockquote>
+<p>sketch.dates wurde von der Agentur sketch.media entwickelt.</p>
+<div id="darstellung-des-kalenders" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Darstellung des Kalenders<a href="kalender.html#darstellung-des-kalenders" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Neben der von uns genutzten “Kalender”-Ansicht gibt weitere Darstellungsmöglichkeiten für Termine:</p>
+<table>
+<colgroup>
+<col width="72%" />
+<col width="27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bezeichnung</th>
+<th>Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monatliche Ansicht? Ja</td>
+<td><img src="_main_files/figure-html/Kalender-monatliche-Ansicht-ja.png" alt="Screenshot: Monatliche Ansicht? Ja." /></td>
+</tr>
+<tr class="even">
+<td>Monatliche Ansicht? Nein</td>
+<td><img src="_main_files/figure-html/Kalender-monatliche-Ansicht-nein.png" alt="Screenshot: Monatliche Ansicht? Nein." /></td>
+</tr>
+<tr class="odd">
+<td>Kalender-Suche</td>
+<td><img src="_main_files/figure-html/Kalender-Suche.png" alt="Screenshot: Kalender-Suche" /></td>
+</tr>
+<tr class="even">
+<td>Kalender Kartenansicht</td>
+<td><img src="_main_files/figure-html/Kalender-Kartenansicht.png" alt="Screenshot: Kalender Kartenansicht" /></td>
+</tr>
+</tbody>
+</table>
+<p>Aktuell nutzen wir die Darstellung Kalender-Suche, da sie uns am praktikabelsten erscheint.</p>
+</div>
+<div id="language-override" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Language Override<a href="kalender.html#language-override" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Sollte der Bedarf bestehen, können Kalenderkategorien mithilfe von Language Override umbenannt werden.</p>
 
+</div>
 </div>
 </div>
             </section>
