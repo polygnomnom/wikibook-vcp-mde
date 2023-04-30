@@ -101,46 +101,10 @@ Der folgende Text ist ein Vorschlag – jede\*r findet am Ende seine eigene Vorg
 > Wenn ich dann mit meinem Text fertig bin, schaue ich meist (frühestens) einen Tag später nochmal drüber, oder lasse das gleich andere Menschen tun (das geht auch ziemlich gut gemeinsam). 
 > Das daraus entstehende Ergebnis ist dann eher eine Collage aus den vielen Ideen und Textschnipseln, die ich zu Beginn niedergeschrieben habe - aber eine Collage, die hoffentlich gut verfasst ist;)
 
-### Suchmaschinenoptimierung (SEO)
+### Suchmaschinenoptimierung (SEO) in Beiträgen{#seo-content}
 
-Damit Beiträge auch bei Suchmaschinenergebnissen (z.B. über DuckDuckGo, Google, Ecosia, Bing, MetaGer, …) angezeigt werden, kann SEO betrieben werden. 
-Dafür ist ein griffiger, eindeutiger Titel wichtig, aber eben noch viel mehr: zum Beispiel, und das ist für unsere Zwecke wichtig, die Meta-Beschreibung. 
-Zu ihr schreibt Google folgendes: 
+> Einen ausführlichen Abschnitt zu SEO findet ihr in Abschnitt 8 [Matomo und Metadaten] 
 
-> #### Meta-Beschreibungs-Tag verwenden
->
-> Im Meta-Beschreibungs-Tag sind die auf der betreffenden Seite behandelten Themen für Google und andere Suchmaschinen zusammengefasst. Der Titel einer 
-> Seite kann mehrere Wörter oder einen Ausdruck umfassen. Das Meta-Beschreibungs-Tag einer Seite hingegen kann ein oder zwei Sätze oder sogar einen kurzen 
-> Absatz enthalten. Wie das `<title>`-Element wird auch das Meta-Beschreibungs-Tag im `<head>`-Element des HTML-Dokuments platziert.
-> 
-> #### Was sind die Vorzüge von Meta-Beschreibungs-Tags?
-> 
-> Meta-Beschreibungs-Tags spielen eine wichtige Rolle, weil Google sie möglicherweise als Snippets für deine Seiten in den Google-Suchergebnissen verwendet. 
-> Beachte, dass wir „möglicherweise“ sagen, weil Google eventuell auch einen relevanten Abschnitt des sichtbaren Textes deiner Seite verwendet, wenn er gut 
-> zur Suchanfrage eines Nutzers passt. Es empfiehlt sich immer, den einzelnen Seiten Meta-Beschreibungs-Tags hinzuzufügen – für den Fall, dass Google keine 
-> gute Textauswahl zur Verwendung im Snippet finden kann. [Weitere Informationen zum Erstellen hochwertiger Meta-Beschreibungen](https://developers.google.com/search/docs/advanced/appearance/snippet?hl=de#meta-descriptions)
-> 
-> #### Seiteninhalte korrekt zusammenfassen 
-> 
-> Verfasse eine Beschreibung, die für Nutzer informativ und interessant ist, wenn diese dein Meta-Beschreibungs-Tag als Snippet in einem Suchergebnis sehen. 
-> Für die Textlänge in einem description-Meta-Tag gibt es keine Mindestvorgabe oder Obergrenze. Wir empfehlen jedoch eine ausreichende Länge, bei der der Text 
-> vollständig in der Suche angezeigt wird und alle relevanten Informationen enthält, die Nutzer für die Einschätzung benötigen, ob die Seite nützlich und relevant 
-> für sie ist. Beachte aber, dass Nutzern je nach Suchform und -ort eventuell unterschiedlich große Snippets angezeigt werden. Vermeide dabei:
-> 
-> * Meta-Beschreibungs-Tags mit Inhalten, die keinen Bezug zu den Inhalten auf der Seite haben.
-> * allgemeine Beschreibungen wie „Dies ist eine Webseite“ oder „Seite über Baseballkarten“
-> * Beschreibungen, die ausschließlich aus Keywords bestehen
-> * das Kopieren des gesamten Dokumentinhalts in das Meta-Beschreibungs-Tag
-> 
-> #### Für jede Seite eindeutige Beschreibungen verwenden
-> 
-> Wenn du für jede Seite ein anderes Meta-Beschreibungs-Tag festlegst, hilft dies sowohl Nutzern als auch Google – insbesondere bei Suchanfragen, bei denen Nutzer 
-> mehrere Seiten in deiner Domain aufrufen können, z. B. bei Suchen mit dem Operator site:. Doch falls deine Website Tausende oder sogar Millionen von Seiten hat, 
-> ist es wahrscheinlich nicht möglich, für alle Seiten manuell Meta-Beschreibungs-Tags zu erstellen. In diesem Fall kannst du Meta-Beschreibungs-Tags basierend auf 
-> dem Inhalt der einzelnen Seiten automatisch generieren.
-> Vermeide dabei die Verwendung desselben Meta-Beschreibungs-Tags für alle Seiten deiner Website oder für eine große Gruppe von Seiten
-
-Eine weitere, deutlich ausführlichere Einschätzung bietet beispielsweise der [Blog SEBO Content](https://sebo-content.de/meta-beschreibung/). 
 Zusammenfassend lässt sich sagen: Es ist wichtig, bei der Erstellung von Beiträgen folgendes zu beachten: 
 
 * Titel: 

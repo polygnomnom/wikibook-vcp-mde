@@ -4,10 +4,9 @@ nutzungskonzept-joomla
 accounts
 admin-stuff
 nutzungskonzept-matomo
-accounts-1
 pixx.io-nutzungskonzept
 medienregelung
-accounts-2
+accounts-1
 verfahrensweise-mit-den-lizenzen
 verfahrensweise-einbindung-alter-medien
 verfahrensweise-kommende-veranstaltungen
@@ -22,7 +21,7 @@ vcp-wording-gendern-und-interne-schreibweisen
 formulierung
 spezielle-schreibweisen
 wie-schreibt-man-einen-text
-suchmaschinenoptimierung-seo
+seo-content
 beispiel-einen-blog-beitrag-schreiben
 thema-und-inhalt-bestimmen
 den-roten-faden-finden
@@ -91,7 +90,7 @@ alter-bei-veranstaltungsbeginn
 anmeldeschluss
 newsletter-mailings-acy-mailing
 nutzungskonzept-acymailing
-accounts-3
+accounts-2
 empfängerinnen
 gestaltung-und-konventionen
 infoknoten
@@ -109,7 +108,8 @@ video-in-bunter-box
 reiner-htmljs-code-und-video-ohne-bunte-box
 umgang-mit-medien
 matomo-und-metadaten
-metadaten
 matomo
-seo---wozu
+was-ist-matomo
 wozu-wir-matomo-nutzen
+accounts-3
+suchmaschinenoptimierung-seo
