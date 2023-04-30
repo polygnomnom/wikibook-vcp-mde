@@ -1,2 +1,57 @@
 # Umgang mit Medien
 
+## Bildgrößen - ein Leitfaden{#imagesize}
+
+### Begriffsklärung:
+|     |     |
+| --- | --- |
+| Bildformat | als was wird das Bild abgespeichert. Bsp: jpg, png, gif, svg |
+| Bildgröße  | Breite und Höhe des Bildes in px (Pixel) |
+| Dateigröße | Speichergröße in kB oder MB |
+| Auflösung |  DPI/PPI, die Qualität des Bildes (Pixel pro Zoll) |
+
+### Formate:
+
+Für normale Bilder (Beitragsbilder, Vorschaubilder, Bilder in einem Blogbeitrag,...) sollte immer das jpg-Format gewählt werden, da dieses sehr gut komprimiert werden kann.
+
+Hat das Bild einen transparenten Hintergrund (z.B. bei Logos ist dies oft der Fall) sollte das png-Format verwendet werden, da jpg-Bilder keine Transparenz haben können.
+
+### Bildgröße:
+
+Beitragsbilder sind die Bilder, die ganz oben von einem Beitrag angezeigt werden und die im Joomla-Editor nicht zu sehen sind. Diese Bilder sollten eine Breite von 1080px haben.
+
+Bilder in einem Beitrag (also Bilder, die ihr im Joomla-Editor sehen könnt), können verschiedene Größen haben:
+
+* Füllen sie die gesamte Breite des Beitrags aus: 1080px (1080x607,5)
+* Füllen sie Dreiviertel des Beitrags aus: ~800px (800*450)
+* Füllen sie Zweidrittel des Beitrags aus: ~710px (710x399,38)
+* Füllen sie die Hälfte des Beitrags aus: ~520px (520x292,5)
+* Füllen sie ein Drittel des Beitrags aus: ~340px (340x191,25)
+* Füllen sie ein Viertel des Beitrags aus: ~250px (140,63)
+* Das sind natürlich alles Schätzungen.
+
+Vorschaubilder sollten eine Größe von ??px haben.
+
+### Dateigröße:
+
+Große Bilder, die über die gesamte Breite des Beitrags gehen, sollten maximal eine Dateigröße von ~130-250kB haben.
+
+Kleine Bilder sollten eine maximale Dateigröße von ~50kB haben
+
+### Auflösung:
+
+Die Auflösung von 72-96dpi reicht im Web aus.
+
+Sicherheitshalber solltest du dir aber immer den Beitrag vor der Veröffentlichung ansehen.
+
+### Wie bearbeite ich mein Bild?
+
+Dazu gibt es sehr viele verschiedene Tools, grundsätzlich aber zwei händelbare Optionen.
+
+Du bearbeitest das Bild offline.
+
+Du lädtst das Bild wie es ist in Joomla hoch (Ordnerstruktur beachten!) und klickst dann auf die drei Punkte und dann auf den Stift ("Datei ändern").
+Über den Reiter "Größe ändern" kannst du die Bildgröße ändern, allerdings verändert sich dadurch nicht das Seitenverhältnis des Bildes. Das kannst du über den Reiter "Zuschneiden" verändern.
+Im ersten Schritt reduzierst du also das Bild auf die korrekte Pixelgröße und im zweiten Schritt schneidest du es so zu, dass es unseren Bildstandards (siehe 3. Bildgröße) entspricht.
+
+> Quellen zu [Bildgrößen - ein Leitfaden](#imagesize): https://birgithotz.com/optimale-bildgroessen-auf-webseiten

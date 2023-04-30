@@ -107,6 +107,13 @@ warum-muss-ich-hier-aufpassen
 video-in-bunter-box
 reiner-htmljs-code-und-video-ohne-bunte-box
 umgang-mit-medien
+imagesize
+begriffsklärung
+formate
+bildgröße
+dateigröße
+auflösung
+wie-bearbeite-ich-mein-bild
 matomo-und-metadaten
 matomo
 was-ist-matomo
