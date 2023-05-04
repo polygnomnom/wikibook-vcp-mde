@@ -41,11 +41,38 @@ Tabellen können in verschiedenen Stilen erstellt werden. Die folgenden Variante
 
 ### Links
 
-In HTML werden Links mit dem `<a></a>`-Element eingebunden. Aktuell gibt es drei verschiedene Fälle, in denen Links genutz werden können: 
+In HTML werden Links mit dem `<a></a>`-Element eingebunden. Natürlich kannst du Links auch erstellen, indem du den Bereich auswählst, wo du den Link setzen möchtest, dann einmal mit der rechten Maustaste auf die Maustaste klickst und dann im Menü "Insert Link" wählst. Daraufhin öffnet sich ein Fenster. Du hast folgende Möglichkeiten:
 
-* Interne Links: hier ist darauf zu achten, dass nicht die URL aus dem Browserfenster kopiert wird, sondern via `Content` / `Menu` der Link gesetzt wird. Dieser beginnt dann mit `?index.php...`
-* Externe Links: sollten immer so gesetzt werden, dass sie sich in einem neuen Tab / neuen Fenster öffnen ("open in new window").
-* Buttons: Links können auch als Button gestyled werden. Dafür wird die Klasse `btn` zugewiesen. Bsp.: `<a href='#' class='btn btn-yellow'> Hier klicken!</a>`
+* *Interne Links:* Du möchtest einen Beitrag/Bild/... von **unserer** Website verlinken? Also zum Beispiel einen Link zu einem Blogbeitrag? Dann kopiere bitte **nicht** den Link aus dem Browserfenster, sondern gehe so vor:
+  * Klicke in der angezeigten Ordnerstruktur auf Content und dann wähle dann die Seite aus. Blogartikel sind im Ordner Blog zu finden.
+  * Wenn du möchtest, dass der Link sich in einem neuen Fenster öffnet, wähle unter Target "Open in a new window".
+  * Den Text des Links kannst du oben unter Text ändern.
+  * Wenn oben unter URL ein Link steht, der mit `index.php...` beginnt, hast du alles richtig gemacht.
+  * Wenn du fertig bist, klicke auf Insert und der Link ist gesetzt.
+  * Achtung! Das funktioniert **nicht** für Kalenderseiten!!
+* *Externe Links:* Du möchtest eine "fremde" Website verlinken?
+  * Kopiere den fertigen Link in das Feld URL.
+  * Der Link sollte entweder mit `https://...` beginnen oder mit `www.example`
+  * Externe Links sollten sich **immer** in neuen Fenstern öffnen. Dazu wählst du unter Target die Option "Open in new window".
+  * Wenn du fertig bist, klicke auf Insert und der Link ist gesetzt.
+* *Button-Link:* Links können auch als Button gestyled werden. Dafür wird die Klasse `btn` zugewiesen.
+  * Bsp.: `<a href='#' class='btn btn-yellow'> Hier klicken!</a>`
+  * Achtung! Das funktioniert nur in HTML!
+  
+### Vorschautext/Weiterlesen
+
+Bei Blogbeiträgen gibt es jeweils einen Vorschautext, der "Werbung" für den Artikel machen soll und dazu animieren, auch den gesamten Text zu lesen. Im Grunde handelt es sich um eine Art Klappentext. Du solltest bei allen Blogbeiträgen **immer** an den Vorschautext denken. Die Erstellung ist ganz einfach:
+
+* Du gehst ganz oben in den Editor und schreibst den Text (oder kopierst den Anfang deines Blogbeitrags), der in der Vorschau angezeigt werden soll.
+* Du klickst in den Weiteren Optionen auf den Button Weiterlesen.
+* Es wird automatisch eine Waagerechte Linie eingefügt - keine Sorge, im Beitrag ist sie nicht zu sehen, sie markiert, wo der Vorschautext aufhört und der Beitragstext anfängt.
+
+::: {.warnung}
+Bitte erstell den Vorschautext nicht zuerst, denn es kann sein, dass du anschließend keinen Text als Absatz danach mehr einfügen kannst.
+:::
+
+### Bilder
+Wenn du Bilder einbettest, halte dich unbedingt an die Regularien im Kapitel 8 [Umgang mit Medien]
 
 ## Einen Beitrag verfassen
 
@@ -53,37 +80,37 @@ In HTML werden Links mit dem `<a></a>`-Element eingebunden. Aktuell gibt es drei
 
 #### VCP-Wording: Gendern und interne Schreibweisen
 
-Die Vorlage zum VCP-Wording kann auf der Seite des VCP gefunden werden. 
+Die Vorlage zum VCP-Wording ist unter diesem Link zu finden: [VCP-Wording](https://www.vcp.de/pfadfinden/wp-content/uploads/2018/06/18_VCP_Gender-Sternchen-WEB.pdf "VCP-Wording"). Dort findest du alle Hinweise, u.a. zur korrekten Verwendung des Gender-Sternchens.
 
 #### Formulierung
 
 #### Spezielle Schreibweisen
-Wenn Schrägstriche („/“) genutzt werden, dann: 
+Wenn **Schrägstriche** („/“) genutzt werden, dann: 
 
 * Im Fließtext ohne Leerzeichen davor und danach, Bsp.: Dähre/Werben
 * In Überschriften mit einem Leerzeichen davor und danach, Bsp.: Dähre / Werben
 * Wenn der Schrägstrich zu einer Wortgruppe in Beziehung steht, immer mit einem Leerzeichen davor und danach, Bsp.: auf der Fahrt / dem Lager
 
-Es gibt verschiedene Striche, die im Text verwendet werden können. 
+Es gibt verschiedene **Striche**, die im Text verwendet werden können. 
 
 * Zur Silbentrennung und zum Kennzeichen zusammenhängender Wörter ist das ein einfaches Minuszeichen, Bsp.: Sachsen-Anhalt, VCP-Länder
 * Zur Kennzeichnung von Nebensätzen und Datumsspannen verwenden wir den sog. Halbgeviertstrich, Bsp.: 1973 – 1999
 * In Texten sollte jedoch lieber für Datumsspannen (etc.) die Form „… bis …“ verwendet werden, Bsp. 1973 bis 1999. 
 
-Datumsangaben können verschieden getätigt werden.
+**Datumsangaben** können verschieden getätigt werden.
 
 * Im Fließtext wollen wir die Form DD. Monat JJJJ, also z.B.: 09. März 2021 nutzen
 * In Überschriften sollte die Form DD.MM.JJ verwendet werden, Bsp.: 09.03.2021
 * In Dateinamen schreiben wir, wenn das Datum denn angegeben wird, das Datum ganz zu Beginn in der Form JJJJ-MM-DD, Bsp.: 2021-03-09_Leitfaden.docx 
 
-Kontaktadressen: Die verschiedenen Medien/Kontaktmöglichkeiten werden wie folgt abgekürzt und geschrieben. Wir verzichten hier auf einen Doppelpunkt nach dem Abkürzungspunkt: 
+**Kontaktadressen:** Die verschiedenen Medien/Kontaktmöglichkeiten werden wie folgt abgekürzt und geschrieben. Wir verzichten hier auf einen Doppelpunkt nach dem Abkürzungspunkt: 
 
 * Festnetztelefon: Tel. 0123 4567 678
 * Mobiltelefon: Mobil 0123 4567 678
 * Fax: Fax 0123 4567 678
 * E-Mail: bipi@vcp-mitteldeutschland.de
 
-Anführungszeichen: Wir verwenden die Form „…“, also z.B. VCP Stamm „Cracau CITZ“ 
+Anführungszeichen: Wir verwenden deutsche Anführungszeichen in der Form „…“, also z.B. VCP Stamm „Cracau CITZ“ 
 
 ### Wie schreibt man einen Text? 
 
@@ -128,12 +155,12 @@ Beitrag formuliert sein sollte? Worin besteht der Nachrichtenwert? Gibt es berei
 > Akaheli wurde auf dem letzten CIRCLES gegründet, es sollen Mitarbeiter\*innen gewonnen und erste Informationen an die Öffentlichkeit gegeben werden 
 > (Ziel: Informationsbasis für mögliche Sponsor*innen schaffen). Gründungsmitglieder sind: Icks, Üps, Zätt. 
 > 
-> Bestehende Titelideen: Der akaheli hebt ab! / Neu gegründer akaheli befasst sich mit spannendem Thema
+> Bestehende Titelideen: Der akaheli hebt ab! / Neu gegründeter akaheli befasst sich mit spannendem Thema
 
 #### Den roten Faden finden
 
-Je nachdem, wie deine bisherigen Vorstellungen von dem Artikel sind, lohnt es sich, einmal kurz zu pausieren und zu schauen, welche Message du dem*der Leser*in mit auf den Weg geben willst. Davon ausgehend kannst du dann überlegen, ob und wie du einleitest, im Hauptteil verfährst und den Beitrag abschließt. Methoden-Tipp: Inhaltsverzeichnis erstellen! 
-Anfangen zu schreiben? 
+Je nachdem, wie deine bisherigen Vorstellungen von dem Artikel sind, lohnt es sich, einmal kurz zu pausieren und zu schauen, welche Message du dem\*der Leser\*in mit auf den Weg geben willst. Davon ausgehend kannst du dann überlegen, ob und wie du einleitest, im Hauptteil verfährst und den Beitrag abschließt. Methoden-Tipp: Inhaltsverzeichnis erstellen!  
+Anfangen zu schreiben?  
 Wenn du all die Informationen hast, die du benötigst, dann ja! Ansonsten solltest du noch einmal etwas Recherche betreiben – nicht selten ergeben sich dann neue Sichtweisen, die zu einem anderen Artikel führen, als wenn du jetzt beginnst. 
 
 #### Meta-Beschreibung 
@@ -142,3 +169,18 @@ Nicht vergessen;) Eine kurze Zusammenfassung des Inhalts, evtl. mit Call to acti
 #### Politur 
 
 #### Posten
+
+STOOOOOOOOOOOOP! Noch nicht auf "Speichern & Schließen" klicken! Wir sind noch nicht fertig!  
+Denn jetzt kommen die letzten "Formalia", die sehr wichtig sind. Wir gehen das jetzt einmal anhand einer Checkliste durch:
+
+* Tab Inhalt:
+  * [ ] Überprüf nochmal: Stimmt inhaltlich und mit der Formatierung alles? Ja? Dann zum nächsten Punkt.
+  * [ ] Ist die Kategorie (rechts in der Seitenleiste) korrekt? Wenn es sich um einen Blogbeitrag handelt, sollte "Blog" ausgewählt sein.
+  * [ ] Der Schalter Hauptbeitrag (rechts, Seitenleiste) sollte auf Nein stehen und die Zugriffsebene auf Public (Ausnahmen bitte mit dem Website-Team absprechen).
+  * [ ] Ist der Vorschautext vorhanden?
+* Tab Bilder und Links:
+  * [ ] Ist ein Einleitungsbild ausgewählt? Wichtig: Es muss das Format 16:9 haben! Das Einleitungsbild erscheint auf der Blog-Seite, wo auch alle anderen Blog-Beiträge zu finden sind.
+  * [ ] Copyright in der Bildunterschrift gesetzt? Bitte nutze dazu das Unicode-Zeichen: ©
+  * [ ] Du kannst auch das komplette Beitragsbild nutzen - das erscheint dann groß über dem Beitrag.
+* Tab Veröffentlichung:
+  * [ ] Falls du den Beitrag zu einem bestimmten Zeitpunkt veröffentlichen möchtest, kannst du das hier einstellen.
