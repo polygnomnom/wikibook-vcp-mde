@@ -1,5 +1,5 @@
 # Formulare und RSForm!Pro
-In diesem Kapitel beschäftigen wir uns ausführlich damit, wie Anmeldungen und andere Formulare mit RSForms!Pro erstellt und verwaltet werden können. 
+> In diesem Kapitel beschäftigen wir uns ausführlich damit, wie Anmeldungen und andere Formulare mit RSForms!Pro erstellt und verwaltet werden können. 
 
 > RSForms findest du unter Komponenten/RSForm! Pro
 
@@ -40,13 +40,17 @@ ein, also zum Beispiel: {rsform 6}
 
 #### Abmeldeformular
 
+::: {.warnung}
+Rechtlich sind wir verpflichtet, auch ein Abmeldeformular auf unserer Website anzubieten.
+:::
+
 Rechtlich sind wir auch dazu verpflichtet, ein Formular zur Abmeldung zu erstellen. Dieses kannst du mit `{loadposition form-abmeldung-designed}` einbinden. Damit wird ein ausklappbarer Kasten eingebunden, der das Formular zur Abmeldung beinhaltet.
 
 > Das Abmeldeformular tut im Grunde nichts anderes, als das Labü via E-Mail darüber zu informieren, dass sich eine Person von einer Veranstaltung abmelden möchte.
 
-## 3\. Weiterführendes und Spezielleres
+## Weiterführendes und Spezielleres
 
-Detailreichere Erklärungen zu den Funktionen von RSForms folgen nun unter 2. Spezielleres. Dort findest du auch Hinweise zum Erstellen Bedingter Felder.
+> Es folgend nun detailreichere Erklärungen zu den Funktionen von RSForms. Beispielsweise werden auch alle Felder erklärt, u.a. auch bedingte Felder.
 
 Für Nerds: Die Verknüpfung mit der Datenbank von sketch.dates funktioniert über das Einfügen des Codeschnipsels
 
@@ -56,7 +60,7 @@ Joomla\Component\SketchDates\Administrator\Helper\SketchDatesRsconnect::connectR
 
 in dem Feld "Das Script wird aufgerufen, bevor die E-Mail an den Admin gesendet wird." unter PHP E-Mail-Skripte in den Eigenschaften des Formulars.
 
-### Tab Komponenten:
+### Tab Komponenten
 
 in Klammern jeweils optional vorhanden (durch eine bestimmte Auswahl)
 
@@ -268,7 +272,9 @@ Der Range Slider ist nützlich, um bspw. eine Meinung oder eine Tendenz mehr ode
 
 #### Formular Layout
 
+::: {.warnung}
 Hier sollte nichts verändert werden!
+:::
 
 Unsere Einstellungen sind wie folgt:
 
@@ -284,7 +290,11 @@ Unsere Einstellungen sind wie folgt:
 
 #### CSS und Javascript
 
-Hier kann mit CSS bzw. Javascript gearbeitet werden. Möglich ist darüber z.B. die automatische Berechnung des Alters bei Veranstaltungsbeginns. Dieser Bereich sollte nur bearbeitet werden, wenn du dich mit CSS und / oder Javascript auskennst! (Definition von auskennen: Du weißt, was du tust und kannst es auch wieder rückgängig machen)
+Hier kann mit CSS bzw. Javascript gearbeitet werden. Möglich ist darüber z.B. die automatische Berechnung des Alters bei Veranstaltungsbeginns.
+
+::: {.warnung}
+Dieser Bereich sollte nur bearbeitet werden, wenn du dich mit CSS und / oder Javascript auskennst! (Definition von auskennen: Du weißt, was du tust und kannst es auch wieder rückgängig machen).
+:::
 
 * CSS
 
@@ -384,7 +394,7 @@ window.onload = function(){
 
 #### Formular Eigenschaften
 
-Hier müssen einige wichtige Einstellungen vorgenommen werden. Die Dinge, die du verändern oder festlegen wolltest, sind **fett** markiert.
+Hier müssen einige wichtige Einstellungen vorgenommen werden. Die Dinge, die du verändern oder festlegen solltest, sind **fett** markiert.
 
 * Veröffentlicht: Ja
 * Zugriffsebene: Alle
@@ -404,7 +414,7 @@ Hier müssen einige wichtige Einstellungen vorgenommen werden. Die Dinge, die du
   * Vielen Dank für deine Anmeldung!  
     Die Formulardaten wurden erfolgreich übermittelt.
 
-    Du solltest in Kürze eine Bestätigungsmail an {registration_email:value} erhalten. Falls nicht, schau bitte in deinem Spam-Ordner nach und leere ggf. dein Postfach! In dieser E-Mail findest du einen Bestätigungslink. Sobald du diesen angeklickt hast, bist du angemeldet!
+    Du solltest in Kürze eine Bestätigungsmail an `{registration_email:value}` erhalten. Falls nicht, schau bitte in deinem Spam-Ordner nach und leere ggf. dein Postfach! In dieser E-Mail findest du einen Bestätigungslink. Sobald du diesen angeklickt hast, bist du angemeldet!
 
     Wenn du nach fünf Minuten noch keine E-Mail bekommen hast, wende dich bitte direkt an [oeffentlichkeitsarbeit@vcp-mitteldeutschland.de](mailto:oeffentlichkeitsarbeit@vcp-mitteldeutschland.de), damit wir nachschauen können, ob die Anmeldung bei uns eingegangen ist. Wenn nicht, wirst du uns nicht als angemeldet angezeigt und damit auch nicht eingeplant.
 * **URL-Weiterleitung:** Wenn der\*die Benutzer\*in zu einer bestimmten Webpage weitergeleitet werden soll, nachdem er\*sie das Formular ausgefüllt hat, kannst du hier die Webpage-URL angeben.
@@ -420,7 +430,9 @@ Hier müssen einige wichtige Einstellungen vorgenommen werden. Die Dinge, die du
 
 #### Formular Attribute
 
+::: {.warnung}
 Hier sollte nichts verändert werden.
+:::
 
 * Aktion
 * Name
@@ -430,7 +442,9 @@ Hier sollte nichts verändert werden.
 
 #### Meta Tags
 
+::: {.warnung}
 Hier sollte nichts verändert werden.
+:::
 
 * Meta Beschreibung
 * Meta Stichwort
@@ -502,7 +516,9 @@ Hier findest du die E-Mail-Einstellungen für die Abmeldung der Veranstaltung. V
 
 #### </>PHP-Skripte
 
+::: {.warnung}
 PHP-Skripte sollten nur genutzt werden, wenn du dich damit auskennst.
+:::
 
 * Skript, das bei Formularanzeige aufgerufen wird
 * Skripte, die während der Formularverarbeitung aufgerufen werden
@@ -510,14 +526,18 @@ PHP-Skripte sollten nur genutzt werden, wenn du dich damit auskennst.
 
 #### </>PHP Scripts - Pre-Processing
 
+::: {.warnung}
 PHP-Skripte sollten nur genutzt werden, wenn du dich damit auskennst.
+:::
 
 * Script called before form is generated
 * Script called before form is validated
 
 #### PHP E-Mail Skripte
 
+::: {.warnung}
 PHP-Skripte sollten nur genutzt werden, wenn du dich damit auskennst.
+:::
 
 * Das Script wird aufgerufen, bevor die E-Mail an den Benutzer gesendet wird.
 * Script wird aufgerufen, bevor die E-Mail an den Benutzer gesendet wird.
@@ -525,7 +545,9 @@ PHP-Skripte sollten nur genutzt werden, wenn du dich damit auskennst.
 
 #### Mapping
 
+::: {.warnung}
 Hier sollte nichts verändert werden.
+:::
 
 #### Bedingte Felder
 
@@ -536,7 +558,9 @@ Mit anderen Worten: Wenn die Person angibt, Mitglied im VCP MDE zu sein, muss si
 
 #### Weiterleitung (Silent Post)
 
+::: {.warnung}
 Hier sollte nichts verändert werden.
+:::
 
 * Sollen die Informationen an einen anderen Ort weitergeleitet werden? Nein
 * Sollen die Informationen lautlos weitergeleitet weren: Ja
@@ -557,14 +581,14 @@ Die Code-Schnipsel, um (eingetragene) Werte abzurufen, haben folgende Struktur:
 
 Den Variablennamen findest du in den jeweiligen Feld-Einstellungen, also beispielsweise name.  
 Die Position in der Variable ist in der Regel der Eingabewert: value.  
-Um also beispielsweise den Namen abzurufen und damit weiterzuarbeiten nutzt du den Code-Schnipsel {name:value}.  
+Um also beispielsweise den Namen abzurufen und damit weiterzuarbeiten nutzt du den Code-Schnipsel `{name:value}`.  
 Fängt der Code-Schnipsel mit global an, dann handelt es sich um Einstellungen, die die gesamte Website betreffen. Diese kannst du nicht beeinflussen. Wenn du Fragen dazu hast, um globale Variablen zu nutzen, wende dich an den AK Öffentlichkeitsarbeit ([oeffentlichkeitsarbeit@vcp-mitteldeutschland.de](mailto:oeffentlichkeitsarbeit@vcp-mitteldeutschland.de)).
 
 ### Dokumentation der eigenen Erweiterungen
 
 #### Alter bei Veranstaltungsbeginn
 
-> Dier Abschnitt dient nur Dokumentationszwecken. Um einen Veranstaltungstermin mit Anmeldung zu erstellen, ist er für dich normalerweise nicht relevant.
+> Dieser Abschnitt dient nur Dokumentationszwecken. Um einen Veranstaltungstermin mit Anmeldung zu erstellen, ist er für dich normalerweise nicht relevant.
 
 Um das Alter bei Veranstaltungsbeginn zu berechnen und bei der Anmeldung auch mit auszugeben, wurde in der großen Vorlage die folgende Lösung implementiert:
 
