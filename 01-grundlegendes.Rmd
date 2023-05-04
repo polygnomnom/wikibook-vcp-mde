@@ -1,6 +1,7 @@
 # Grundlegende Einstellungen und Nutzungskonzepte
 
 ## Nutzungskonzept Joomla
+
 ### Accounts
 
 ### Admin-Stuff
@@ -11,63 +12,64 @@ Matomo ist das Webanalysetool für unsere Website. Hierüber werden Statistiken 
 
 ## pixx.io Nutzungskonzept
 
-### Medienregelung 
+### Medienregelung
 
-Medien werden unterschieden in: 
-* massenweise produziert z. B. Fotos/Videos von Veranstaltungen
-    * werden direkt in pixx.io zusammen mit der Lizenz gespeichert
-* individuelles Medium (z. B. Unikat/Handgezeichnetes) für bestimmte Projekte
-    * kann zunächst in der Cloud im jeweiligen Projekt- oder Veranstaltungsordner erstellt werden (wenn möglich mit Urheber im Dateinamen) und wenn möglich in den EXIF-Daten
-    * nach Ende der Veranstaltung oder des Projektes (spätestens nach 3 Monaten) werden diese Dateien zu pixx.io übertragen
-    * sobald ein Medium in pixx.io hochgeladen wird, wird es mit einer Lizenz versehen: 
-        * direkte Lizenz mit Nutzungsvereinbarung (Verwendungsmöglichkeiten angeben)
-        * passive Lizenz (noch keine Verwendungsmöglichkeiten angegeben, Name des Urhebers*der Urheberin muss hinterlegt werden)
+Medien werden unterschieden in:
+
+* massenweise produziert z.B. Fotos/Videos von Veranstaltungen
+  * werden direkt in pixx.io zusammen mit der Lizenz gespeichert
+* individuelles Medium (z.B. Unikat/Handgezeichnetes) für bestimmte Projekte
+  * kann zunächst in der Cloud im jeweiligen Projekt- oder Veranstaltungsordner erstellt werden (wenn möglich mit Urheber im Dateinamen) und wenn möglich in den EXIF-Daten
+  * nach Ende der Veranstaltung oder des Projektes (spätestens nach 3 Monaten) werden diese Dateien zu pixx.io übertragen
+  * sobald ein Medium in pixx.io hochgeladen wird, wird es mit einer Lizenz versehen:
+    * direkte Lizenz mit Nutzungsvereinbarung (Verwendungsmöglichkeiten angeben)
+    * passive Lizenz (noch keine Verwendungsmöglichkeiten angegeben, Name des Urhebers\*der Urheberin muss hinterlegt werden)
 
 ### Accounts
+
 * Zugriffsdaten werden gespeichert, d.h. wir können nur 5 individuelle Accounts vergeben.
 * Ein dauerhaftes Modell ist wahrscheinlich nicht machbar, da es zu häufig Wechsel gibt
 
-Aktuell haben folgende Personen einen Account: Jakob Krueger, Noah Kriesch, Franziska Voelz, Isabell Eggert 
+Aktuell haben folgende Personen einen Account: Jakob Krueger, Noah Kriesch, Franziska Voelz, Isabell Eggert
 
 ### Verfahrensweise mit den Lizenzen
 
-Eine Lizenz pro Veranstaltung, in der die Namen der Personen, die zugestimmt / nicht zugestimmt haben, und in der der jeweilige Text der Foto- und Film-Vereinbarung vermerkt sind.
-Für jedes erstellte Medienprodukt (Logos, Videos, Gezeichnetes, Audio etc.) wie z.B. bei #onlinepfaditime sollte eine eigene Lizenz erstellte werden (Nutzungsrechtevereinbarung).
-Wie lösen wir es bei Veranstaltungen mit der Identifizierung?
-Fotos von Personen, die kein Einverständnis haben, in einen Unterordner des Veranstaltungsordners speichern mit Titel NICHT VERÖFFENTLICHEN. Die zu veröffentlichen Medien der Veranstaltung müssen immer damit abgeglichen werden.
+Eine Lizenz pro Veranstaltung, in der die Namen der Personen, die zugestimmt / nicht zugestimmt haben, und in der der jeweilige Text der Foto- und Film-Vereinbarung vermerkt sind. 
+Für jedes erstellte Medienprodukt (Logos, Videos, Gezeichnetes, Audio etc.) wie z.B. bei #onlinepfaditime sollte eine eigene Lizenz erstellte werden (Nutzungsrechtevereinbarung). 
+Wie lösen wir es bei Veranstaltungen mit der Identifizierung? 
+Fotos von Personen, die kein Einverständnis haben, in einen Unterordner des Veranstaltungsordners speichern mit Titel NICHT VERÖFFENTLICHEN. Die zu veröffentlichen Medien der Veranstaltung müssen immer damit abgeglichen werden. 
 ! Wie werden Lizenzen eingepflegt? 
 ! Es sollte unbedingt ein Template für persönliche Lizenzvereinbarungen geben!
 
-In der AG Kommunikationsstrategie wurde folgendes Vorgehen beschlossen: 
+In der AG Kommunikationsstrategie wurde folgendes Vorgehen beschlossen:
 
-### Verfahrensweise Einbindung “alter Medien” 
+### Verfahrensweise Einbindung "alter Medien"
 
-Bilder einer Veranstaltung werden in einem Ordner mit der Benennung “Veranstaltung_YYYY_MM” gespeichert.
-Bilder werden auf pixx.io hochgeladen (nicht alle auf einmal, sondern gestaffelt) 
-Diese Bilder werden intern auf Brauchbarkeit gesichtet. Nicht verwendbare Bilder werden direkt gelöscht.
+Bilder einer Veranstaltung werden in einem Ordner mit der Benennung "Veranstaltung_YYYY_MM" gespeichert. 
+Bilder werden auf pixx.io hochgeladen (nicht alle auf einmal, sondern gestaffelt).
+Diese Bilder werden intern auf Brauchbarkeit gesichtet. Nicht verwendbare Bilder werden direkt gelöscht. 
 Bilder, die verwendet sollen, werden in den Veranstaltungsordnern belassen. Nach vollständiger Sichtung wird Franzi darüber informiert. Durch Franzi in Bezug auf die Einverständniserklärungen überprüft. 
-Bilder, für die kein Einverständnis vorliegt, werden in einen dem Veranstaltungsordner untergeordneten Ordner “OhneEinverstaendnis” gelegt. 
+Bilder, für die kein Einverständnis vorliegt, werden in einen dem Veranstaltungsordner untergeordneten Ordner "OhneEinverstaendnis" gelegt.
 
-### Verfahrensweise kommende Veranstaltungen 
+### Verfahrensweise kommende Veranstaltungen
 
-Statt einer Liste mit Einverständnissen werden einheitliche Bilder der Personen ohne Einverständniserklärung in dem Unterordner “NICHT_VEROEFFENTLICHEN” gespeichert. Fotograf*innen werden auf der Veranstaltung sichtbar gekennzeichnet. Möchte eine Person gar nicht fotografiert werden, spricht sie einmal mit dem*der Fotografen*Fotografin, damit diese*r ihr Gesicht kennt.
-Nach der Veranstaltung werden Bilder durch den*die Fotograf*in gesichtet und danach wird wie bei alten Bildern verfahren. 
-Schlagworte werden mit der Zeit hinzugefügt.
-Wenn uns Fotos und Videos zur Verfügung gestellt werden, gehen wir davon aus, dass wir es ohne Einschränkung (zeitlich und zweckmäßig) nutzen können. Dies wird deutlich kommuniziert (Art der Kommunikation muss noch festgelegt werden). Andernfalls kann auch ein Lizenzvertrag angefertigt werden. Weiterhin werden Lizenzverträge für Medien erstellt, die langfristig verwendet werden sollen.
+Statt einer Liste mit Einverständnissen werden einheitliche Bilder der Personen ohne Einverständniserklärung in dem Unterordner "NICHT_VEROEFFENTLICHEN" gespeichert. Fotograf\*innen werden auf der Veranstaltung sichtbar gekennzeichnet. Möchte eine Person gar nicht fotografiert werden, spricht sie einmal mit dem\*der Fotografen\*Fotografin, damit diese\*r ihr Gesicht kennt. 
+Nach der Veranstaltung werden Bilder durch den\*die Fotograf\*in gesichtet und danach wird wie bei alten Bildern verfahren. 
+Schlagworte werden mit der Zeit hinzugefügt. 
+Wenn uns Fotos und Videos zur Verfügung gestellt werden, gehen wir davon aus, dass wir es ohne Einschränkung (zeitlich und zweckmäßig) nutzen können. Dies wird deutlich kommuniziert (Art der Kommunikation muss noch festgelegt werden). Andernfalls kann auch ein Lizenzvertrag angefertigt werden. Weiterhin werden Lizenzverträge für Medien erstellt, die langfristig verwendet werden sollen.  
 Ordnerstruktur
 * Veranstaltungen
-    * Veranstaltung1_YYYY_MM
-        * OhneEinverstaendnis (bisherige Veranstaltungen)
-        * NICHT_VEROEFFENTLICHEN_GESICHTER (ab jetzt)
-    * Veranstaltung2_YYYY_MM
-        * ...
-    * ...
-* Symbole_etc	
-* Stockbilder (nicht von konkreten Veranstaltungen, zur freien Verfügung) 
-* Organisation
-    * Gestaltungsrichtlinien_VCP_Bund.pdf
-    * Gestaltungsrichtlinien_VCP_MDE.pdf (falls irgendwann vorhanden) 
-    * Lizenzvorlage.dotx
+  * Veranstaltung1_YYYY_MM
+    * OhneEinverstaendnis (bisherige Veranstaltungen) 
+    * NICHT_VEROEFFENTLICHEN_GESICHTER (ab jetzt)
+  * Veranstaltung2_YYYY_MM 
+    * ... 
+  * ... 
+* Symbole_etc
+* Stockbilder (nicht von konkreten Veranstaltungen, zur freien Verfügung)
+* Organisation 
+  * Gestaltungsrichtlinien_VCP_Bund.pdf 
+  * Gestaltungsrichtlinien_VCP_MDE.pdf (falls irgendwann vorhanden)
+  * Lizenzvorlage.dotx
 
-Für bestimmte Nutzungszwecke (z.B. Pressefotos, Erinnerungsfotos für Veranstaltungsteilnehmer*innen) werden Kollektionen verwendet.
-
+Für bestimmte Nutzungszwecke (z.B. Pressefotos, Erinnerungsfotos für Veranstaltungsteilnehmer\*innen) werden Kollektionen verwendet.
