@@ -5,6 +5,7 @@
 
 Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (ggf. unter Komponenten) auf sketch.dates | Termine/Neuen Termin anlegen. Nun kannst du alle Informationen eintragen. Nur Felder mit Asterisk (\*) sind verbindlich.
 
+
 | Feld                | Musst du etwas ändern?  | Nähere Beschreibung | 
 | ---------           | ----------------------- | --------------------|
 | Mitteilung senden   | Nein                    | Das kannst du so lassen, wie es ist. |
@@ -30,6 +31,8 @@ Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (gg
 | Optionen für Zusatz | Nein                    | Da sollte nichts drin stehen.| 
 | Onlinebezahlung     | Nein                    | Theoretisch gäbe es die Möglichkeit zur Online-Zahlung. Dieses Modul nutzen wir jedoch nicht.|
 
+
+
 <script type="text/javascript">
   window.onload = function markYes() {
     zellen = document.querySelectorAll('td');
@@ -53,8 +56,10 @@ Mit dem Modul sketch.dates kannst du einen neuen Termin erstellen. Gehe dazu (gg
     Standardmäßig sollte also folgender Code auftauchen:  
     `{loadposition foerdermittelgeber-kasten}`
   * Folgenden Text aufzunehmen, ist sinnvoll:
+  
     > **Hinweis:** Nur VCP-Mitglieder sind über den VCP e.V. Unfall- und Haftpflichtversichert. Versicherungsschutz bei Krankheit, für Reisegepäck und gegen Diebstahl besteht seitens des VCP nicht. Über die Versicherungssumme hinausgehende Forderungen können nicht geltend gemacht werden.
-  * Füge die Foto- und Filmvereinbarung, die du für deine Veranstaltung erstellen musst, ein. Hier kommst du zur bearbeitbaren Word-Vorlage [Link einfügen].  
+    
+  * Füge die Foto- und Filmvereinbarung, die du für deine Veranstaltung erstellen musst, ein. Hier kommst du zur bearbeitbaren Word-Vorlage [Link einfügen]. Du findest sie auch in der Nextcloud. 
     Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website). Denke auch daran, sie in dem Anmeldeformular zu verlinken! 
   * Füge ggf. eine Papieranmeldung hinzu.  
     Beachte den korrekten Speicherort (siehe Ordnerstruktur der Website)
