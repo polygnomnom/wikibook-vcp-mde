@@ -1,28 +1,35 @@
-# Willkommen! 
+# Willkommen!
 
-Dies ist eine wiki-artige Dokumentation zu Website ([vcp-mitteldeutschland.de](https://www.vcp-mitteldeutschland.de)) und Öffentlichkeitsarbeit im VCP Mitteldeutschland (Stand Frühjahr 2023). Zielsetzung ist, 
+Dies ist eine wiki-artige Dokumentation zur Website ([vcp-mitteldeutschland.de](https://www.vcp-mitteldeutschland.de)) und Öffentlichkeitsarbeit im VCP Mitteldeutschland (Stand Frühjahr 2023). Zielsetzung ist, 
+
 * bisherige Absprachen und Workflows festzuhalten 
 * neuen Mitarbeitenden auf Landesebene einen einfachen Einstieg in die Arbeit mit der Website zu ermöglichen. 
 
 Falls die Kapazitäten ausreichen, sollen zudem
+
 * Tipps zur Öffentlichkeitsarbeit und
 * ein Veranstaltungsleitfaden 
 
 implementiert werden. 
-## Box mit Warnung 
+
+## Box mit Warnung
+
 Mit der Syntax 
+
 ```
 ::: {.warnung}
 Hier kommt der Text.
 :::
 ```
+
 kann eine Box mit rotem linken Rand ausgegeben werden. Sie ist für Warnungen gedacht.
 
 ## Hervorhebung von Wörtern
 
 Einzelne Wörter und Textpassagen können mit `<span class="hl"> Hervorgehoben </span>` hervorgehoben werden (gelber hintergrund, braune Schrift).
 
-# Credits 
+# Credits
+
 Das Projekt basiert auf **R Markdown** and **bookdown** (https://github.com/rstudio/bookdown). 
 
 ### Weitere Informationen:
@@ -30,11 +37,12 @@ Das Projekt basiert auf **R Markdown** and **bookdown** (https://github.com/rstu
 * Das Buch zu **bookdown**: https://bookdown.org/yihui/bookdown/
 * Die **bookdown**-Package-Website: https://pkgs.rstudio.com/bookdown
 
-# Additional Information - How to handle bookdown 
-> aus der ursprünglichen index-Datei kopiert
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+# Additional Information - How to handle bookdown
 
-## Usage 
+> aus der ursprünglichen index-Datei kopiert
+> This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+
+## Usage
 
 Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
 
@@ -48,11 +56,11 @@ You can render the HTML version of this example book without changing anything:
 
 1. Find the **Build** pane in the RStudio IDE, and
 
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
+2. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
 
 Or build the book from the R console:
 
-```{r, eval=FALSE}
+```{r,
 bookdown::render_book()
 ```
 
@@ -62,12 +70,11 @@ To render this example to PDF as a `bookdown::pdf_book`, you'll need to install 
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
 
-```{r eval=FALSE}
+```{r
 bookdown::serve_book()
 ```
 
-
-```{r include=FALSE}
+```{r
 # automatically create a bib database for R packages
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
