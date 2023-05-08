@@ -1,6 +1,6 @@
 # Willkommen!
 
-Dies ist eine wiki-artige Dokumentation zu Website ([vcp-mitteldeutschland.de](https://www.vcp-mitteldeutschland.de)) und Öffentlichkeitsarbeit im VCP Mitteldeutschland (Stand Frühjahr 2023). Zielsetzung ist, 
+Dies ist eine wiki-artige Dokumentation zur Website ([vcp-mitteldeutschland.de](https://www.vcp-mitteldeutschland.de)) und Öffentlichkeitsarbeit im VCP Mitteldeutschland (Stand Frühjahr 2023). Zielsetzung ist, 
 
 * bisherige Absprachen und Workflows festzuhalten 
 * neuen Mitarbeitenden auf Landesebene einen einfachen Einstieg in die Arbeit mit der Website zu ermöglichen. 
@@ -28,11 +28,10 @@ kann eine Box mit rotem linken Rand ausgegeben werden. Sie ist für Warnungen ge
 
 Einzelne Wörter und Textpassagen können mit `<span class="hl"> Hervorgehoben </span>` hervorgehoben werden (gelber hintergrund, braune Schrift).
 
-
-
 ## Markdown-Syntax
 
 Die Markdown-Syntax ist sehr einfach und intuitiv - das ist ihr Vorteil. Eine nützliche Übersicht mit den allerwichtigsten Befehlen bietet der Wikipedia-Artikel zu Markdown: [Hier geht's lang!]([Markdown – Wikipedia](https://de.wikipedia.org/wiki/Markdown#Auszeichnungsbeispiele "Yeah, Markdown!")
+
 
 
 
