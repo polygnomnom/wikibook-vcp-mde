@@ -22,8 +22,7 @@ div.book.font-family-1 {
 
 /* Box für Warnungen */
 .warnung {
-  color: black; 
-  background-color: rgba(193,201,193,0.3);
+  background-color: rgba(240,83,93,0.3);
   border-left: 4px solid #e94653; 
   border-radius: 4px;
   padding: 4px 4px 4px 20px; 
