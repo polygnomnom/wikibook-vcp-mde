@@ -12,6 +12,11 @@ Matomo ist das Webanalysetool für unsere Website. Hierüber werden Statistiken 
 
 ## pixx.io Nutzungskonzept
 
+::: {.warnung}
+Die Lizenz für pixx.io wird derzeit nicht mehr über Stifter helfen gestellt. Deshalb werden die Fotos wie zuvor durch das Landesbüro mit lokalen Festplatten verwaltet. 
+Die nachfolgenden Absätze berücksichtigen dies nicht und bedürfen einer Überarbeitung, sobalb ein neues, sinnvolles Konzept erarbeitet ist. 
+:::
+
 ### Medienregelung
 
 Medien werden unterschieden in:
@@ -56,8 +61,11 @@ Bilder, für die kein Einverständnis vorliegt, werden in einen dem Veranstaltun
 Statt einer Liste mit Einverständnissen werden einheitliche Bilder der Personen ohne Einverständniserklärung in dem Unterordner "NICHT_VEROEFFENTLICHEN" gespeichert. Fotograf\*innen werden auf der Veranstaltung sichtbar gekennzeichnet. Möchte eine Person gar nicht fotografiert werden, spricht sie einmal mit dem\*der Fotografen\*Fotografin, damit diese\*r ihr Gesicht kennt. 
 Nach der Veranstaltung werden Bilder durch den\*die Fotograf\*in gesichtet und danach wird wie bei alten Bildern verfahren. 
 Schlagworte werden mit der Zeit hinzugefügt. 
+
 Wenn uns Fotos und Videos zur Verfügung gestellt werden, gehen wir davon aus, dass wir es ohne Einschränkung (zeitlich und zweckmäßig) nutzen können. Dies wird deutlich kommuniziert (Art der Kommunikation muss noch festgelegt werden). Andernfalls kann auch ein Lizenzvertrag angefertigt werden. Weiterhin werden Lizenzverträge für Medien erstellt, die langfristig verwendet werden sollen.  
-Ordnerstruktur
+
+Ordnerstruktur:
+
 * Veranstaltungen
   * Veranstaltung1_YYYY_MM
     * OhneEinverstaendnis (bisherige Veranstaltungen) 
